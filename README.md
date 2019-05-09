@@ -2,6 +2,8 @@
 
 1. Download npm from here https://nodejs.org/en/ - The Current one
 
+1.a) npm install -g @angular/cli
+
 2. Clone the repo
 
 3. Open terminal
