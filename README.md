@@ -10,6 +10,7 @@
 4. cd frontend
 
       b) npm install ng
+      
       a) npm install -g @angular/cli
      
 
