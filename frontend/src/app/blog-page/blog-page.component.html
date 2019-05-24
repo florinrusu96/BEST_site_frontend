@@ -1,4 +1,15 @@
-<p>
-  blog-page works!
+<h1>Blog Posts</h1>
+<ng-container>
+  <li class="blog-post pad-all-24" *ngFor="let blogPost of blogPosts">
+    <h3>
+      {{blogPost.title}}
+    </h3>
 
-</p>
+    <h4>
+      {{blogPost.content}}
+    </h4>
+    Author: {{blogPost.author}}
+    Date posted: {{blogPost.created_on}}  Date updated: {{blogPost.updated_on}}
+  </li>
+</ng-container>
+

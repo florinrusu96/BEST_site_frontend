@@ -10,7 +10,7 @@ import {BlogPostComponent} from './blog-page/blog-post/blog-post.component';
 import {BackendClientService} from './backend-client/backend-client.service';
 import {ToastrModule} from 'ngx-toastr';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
