@@ -1,0 +1,84 @@
+import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {Injectable} from "@angular/core";
+import {Router} from "@angular/router";
+import {Observable, throwError} from "rxjs";
+import {ToastrService} from "ngx-toastr";
+import {catchError} from 'rxjs/operators'
+import {BlogPost} from "../models/blog-post";
+
+const httpOptions = {
+  headers: new HttpHeaders({
+    'Content-Type': 'application/json',
+  })
+}
+
+@Injectable()
+export class BackendClientService {
+  private endpoint;
+
+  constructor(
+    private toastrService: ToastrService,
+    private httpClient: HttpClient,
+    private router: Router
+  ) {
+    this.endpoint = 'http://' + location.hostname
+  }
+
+  private handleError(toastr: ToastrService) {
+    return (error: any) => {
+      console.error(error);
+      const message = JSON.stringify(error['error']) || error['message'];
+      toastr.error(message);
+      return throwError(error);
+    };
+  }
+
+  private get<T>(url: string, params?: any): Observable<T> {
+    params = params || {};
+    if (!params.get_full_objects) {
+      params.get_full_objects = 'true';
+    }
+    return this.httpClient.get<T>(this.endpoint + url, {params: params}).pipe(
+      catchError(this.handleError(this.toastrService)));
+  }
+
+  private post<T>(url: string, body: T): Observable<T> {
+    return this.httpClient.post<T>(this.endpoint + url, body, httpOptions).pipe(
+      catchError(this.handleError(this.toastrService)));
+  }
+
+  private patch<T>(url: string, body: any | null): Observable<T> {
+    return this.httpClient.patch<T>(this.endpoint + url, body).pipe(
+      catchError(this.handleError(this.toastrService)));
+  }
+
+  private put<T>(url: string, body: any | null): Observable<T> {
+    return this.httpClient.put<T>(this.endpoint + url, body).pipe(
+      catchError(this.handleError(this.toastrService)));
+  }
+
+  private delete<T>(url: string): Observable<T> {
+    return this.httpClient.delete<T>(this.endpoint + url, {params: {'soft_delete': 'true'}}).pipe(
+      catchError(this.handleError(this.toastrService)));
+  }
+
+  // ------Blog Posts ----
+
+  getBlogPost(blogPostId: string): Observable<BlogPost> {
+    return this.get<BlogPost>('blog-posts/' + blogPostId);
+  }
+
+  listBlogPosts(params?: object): Observable<BlogPost[]> {
+    return this.get<BlogPost[]>('blog-posts/', params);
+  }
+
+  createBlogPost(blogPost: BlogPost): Observable<BlogPost> {
+    return this.post<BlogPost>('blog-posts/', blogPost);
+  }
+
+  deleteBlogPost(blogPost: BlogPost): Observable<BlogPost> {
+    return this.delete('projects/' + blogPost.id);
+  }
+
+
+}
