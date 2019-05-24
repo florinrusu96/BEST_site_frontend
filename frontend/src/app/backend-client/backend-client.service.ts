@@ -1,16 +1,16 @@
-import {HttpClient, HttpHeaders} from "@angular/common/http";
-import {Injectable} from "@angular/core";
-import {Router} from "@angular/router";
-import {Observable, throwError} from "rxjs";
-import {ToastrService} from "ngx-toastr";
-import {catchError} from 'rxjs/operators'
-import {BlogPost} from "../models/blog-post";
+import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {Router} from '@angular/router';
+import {Observable, throwError} from 'rxjs';
+import {ToastrService} from 'ngx-toastr';
+import {catchError} from 'rxjs/operators';
+import {BlogPost} from '../models/blog-post';
 
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
   })
-}
+};
 
 @Injectable()
 export class BackendClientService {
@@ -21,24 +21,21 @@ export class BackendClientService {
     private httpClient: HttpClient,
     private router: Router
   ) {
-    this.endpoint = 'http://' + location.hostname
+    // this needs to be properly changed for deployment
+    this.endpoint = 'http://localhost:8000/';
   }
 
   private handleError(toastr: ToastrService) {
     return (error: any) => {
       console.error(error);
-      const message = JSON.stringify(error['error']) || error['message'];
+      const message = JSON.stringify(error.error) || error.message;
       toastr.error(message);
       return throwError(error);
     };
   }
 
   private get<T>(url: string, params?: any): Observable<T> {
-    params = params || {};
-    if (!params.get_full_objects) {
-      params.get_full_objects = 'true';
-    }
-    return this.httpClient.get<T>(this.endpoint + url, {params: params}).pipe(
+    return this.httpClient.get<T>(this.endpoint + url, {params}).pipe(
       catchError(this.handleError(this.toastrService)));
   }
 
@@ -58,7 +55,7 @@ export class BackendClientService {
   }
 
   private delete<T>(url: string): Observable<T> {
-    return this.httpClient.delete<T>(this.endpoint + url, {params: {'soft_delete': 'true'}}).pipe(
+    return this.httpClient.delete<T>(this.endpoint + url).pipe(
       catchError(this.handleError(this.toastrService)));
   }
 
@@ -77,7 +74,7 @@ export class BackendClientService {
   }
 
   deleteBlogPost(blogPost: BlogPost): Observable<BlogPost> {
-    return this.delete('projects/' + blogPost.id);
+    return this.delete('blog-posts//' + blogPost.id);
   }
 
 

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {BackendClientService} from '../backend-client/backend-client.service';
+import {BlogPost} from "../models/blog-post";
 
 @Component({
   selector: 'app-blog-page',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogPageComponent implements OnInit {
 
-  constructor() { }
+  private blogPosts: BlogPost[];
+
+  constructor(private backendClient: BackendClientService) {
+  }
 
   ngOnInit() {
+    this.backendClient.listBlogPosts().subscribe(data => console.log(data))
   }
 
 }
