@@ -11,7 +11,7 @@
 
       b) npm install ng
       
-      a) npm install -g @angular/cli
+      a) npm install
      
 
 5. Use command ng serve -o
