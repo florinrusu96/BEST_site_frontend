@@ -1,3 +1,12 @@
-<p>
-  navigation works!xf.kxzkfxz
-</p>
+<div class="banner" background='../../assets/images/background.jpg'>
+  <mat-nav-list class="navigation">
+    <mat-list-item routerLink="home-page"><span translate>NAVBAR.HOME</span></mat-list-item>
+    <mat-list-item><span translate>NAVBAR.STORY</span></mat-list-item>
+    <mat-list-item><span translate>NAVBAR.EVENTS</span></mat-list-item>
+    <mat-list-item><span translate>NAVBAR.PARTNERS</span></mat-list-item>
+    <mat-list-item routerLink="blog-page"><span translate>NAVBAR.BLOG</span></mat-list-item>
+    <mat-list-item><span translate>NAVBAR.CONTACT</span></mat-list-item>
+    <mat-list-item><span (click)="changeLanguage()" translate>NAVBAR.LANGUAGE</span></mat-list-item>
+  </mat-nav-list>
+</div>
+<div class="divider-banner"></div>

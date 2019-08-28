@@ -1,0 +1,25 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    right: 0;
+    position: absolute;
+    margin-right: 48px;
+}
+
+.mat-list-item{
+    color:black;
+}
+
+.banner{
+    height: 600px;
+    width: 100%;
+    background-image: url('../../assets/images/background.png')
+}
+/*
+    Collors need to be changed, actually we need to implement a better way, with primary colors and secondary colors.
+*/
+.divider-banner{
+    height: 80px;
+    width: 100%;
+    background-color: #456b4c;
+}
