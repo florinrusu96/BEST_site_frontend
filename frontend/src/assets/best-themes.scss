@@ -1,0 +1,113 @@
+@import '~@angular/material/theming';
+
+$mat-bestblue: (
+    50 : #e0eef7,
+    100 : #b3d4ea,
+    200 : #80b8dc,
+    300 : #4d9cce,
+    400 : #2686c4,
+    500 : #0071b9,
+    600 : #0069b2,
+    700 : #005eaa,
+    800 : #0054a2,
+    900 : #004293,
+    A100 : #bed6ff,
+    A200 : #8bb7ff,
+    A400 : #5897ff,
+    A700 : #3f87ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #ffffff,
+    )
+);
+
+$mat-bestorange: (
+    50 : #fff4e3,
+    100 : #ffe4b9,
+    200 : #ffd38a,
+    300 : #ffc15b,
+    400 : #ffb338,
+    500 : #ffa615,
+    600 : #ff9e12,
+    700 : #ff950f,
+    800 : #ff8b0c,
+    900 : #ff7b06,
+    A100 : #ffffff,
+    A200 : #fff8f3,
+    A400 : #ffdbc0,
+    A700 : #ffcca7,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-bestgreen: (
+    50 : #eef7e4,
+    100 : #d6ecbc,
+    200 : #badf8f,
+    300 : #9ed262,
+    400 : #8ac940,
+    500 : #75bf1e,
+    600 : #6db91a,
+    700 : #62b116,
+    800 : #58a912,
+    900 : #459b0a,
+    A100 : #dcffc9,
+    A200 : #bbff96,
+    A400 : #9aff63,
+    A700 : #8aff49,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+@include mat-core();
+
+$best-primary: mat-palette($mat-bestblue);
+
+$best-accent: mat-palette($mat-bestgreen);
+
+$best-warn: mat-palette($mat-bestorange);
+
+$best-theme: mat-light-theme($best-primary, $best-accent, $best-warn);
+
+@include angular-material-theme($best-theme);
+

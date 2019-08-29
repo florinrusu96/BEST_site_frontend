@@ -15,6 +15,8 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {MatListModule} from '@angular/material/list'
 import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -43,6 +45,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     MatListModule,
     MatMenuModule,
+    MatButtonModule,
   ],
   providers: [
     BackendClientService,

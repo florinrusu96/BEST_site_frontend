@@ -23,7 +23,9 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              {
+                "input": "src/assets/best-themes.scss"
+              },
               "src/styles.css"
             ],
             "scripts": [],

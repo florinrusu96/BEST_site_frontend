@@ -7,19 +7,38 @@
 }
 
 .mat-list-item{
-    color:black;
+    color:white;
+    font-family: 'Raleway', sans-serif;
 }
 
 .banner{
+    text-align: center;
     height: 600px;
     width: 100%;
-    background-image: url('../../assets/images/background.png')
+    background-image: url('src/assets/images/background.png')
 }
-/*
-    Collors need to be changed, actually we need to implement a better way, with primary colors and secondary colors.
-*/
+
 .divider-banner{
     height: 80px;
     width: 100%;
-    background-color: #456b4c;
+    background-color:#4691bd;
+}
+
+.become-member-button{
+    position: relative;
+    border-radius: 0px;
+}
+
+.become-partner-button{
+    position: relative;
+    border-radius: 0px;
+}
+
+.logo{
+    position: relative;
+}
+
+.banner-content{
+    position: relative;
+    top: 20%;
 }

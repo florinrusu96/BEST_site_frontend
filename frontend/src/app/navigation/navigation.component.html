@@ -1,4 +1,4 @@
-<div class="banner" background='../../assets/images/background.jpg'>
+<div class="banner">
   <mat-nav-list class="navigation">
     <mat-list-item routerLink="home-page"><span translate>NAVBAR.HOME</span></mat-list-item>
     <mat-list-item><span translate>NAVBAR.STORY</span></mat-list-item>
@@ -8,5 +8,10 @@
     <mat-list-item><span translate>NAVBAR.CONTACT</span></mat-list-item>
     <mat-list-item><span (click)="changeLanguage()" translate>NAVBAR.LANGUAGE</span></mat-list-item>
   </mat-nav-list>
+  <div class='banner-content'>
+    <button class="become-member-button" mat-raised-button color='warn' ><span translate>BANNER.BECOME_A_MEMBER</span></button>
+    <img class="logo" src='../../assets/images/logo.png'>
+    <button class="become-partner-button" mat-raised-button color='primary' ><span translate>BANNER.BECOME_A_PARTNER</span></button>
+  </div>
 </div>
 <div class="divider-banner"></div>
