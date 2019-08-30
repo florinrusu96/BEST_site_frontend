@@ -16,6 +16,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {MatListModule} from '@angular/material/list'
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { BecomeMemberComponent } from './become-member/become-member.component';
+import { BecomePartnerComponent } from './become-partner/become-partner.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,6 +30,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavigationComponent,
     BlogPageComponent,
     BlogPostComponent,
+    BecomeMemberComponent,
+    BecomePartnerComponent,
 
   ],
   imports: [
