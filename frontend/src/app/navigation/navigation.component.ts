@@ -20,11 +20,11 @@ export class NavigationComponent implements OnInit {
   }
 
   changeLanguage(){
-    if(this.translate.currentLang == "en"){
+    if(this.translate.currentLang == "gb"){
       this.translate.use("ro")
     }
     else{
-      this.translate.use("en")
+      this.translate.use("gb")
     }
   }
 

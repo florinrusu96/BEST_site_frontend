@@ -24,6 +24,7 @@
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "core-js": "^2.5.4",
+    "flag-icon-css": "^3.3.0",
     "ng": "0.0.0",
     "ngx-toastr": "^10.0.4",
     "rxjs": "~6.3.3",
