@@ -1,0 +1,15 @@
+{
+    "NAVBAR": {
+        "HOME": "Acasa",
+        "STORY": "Poveste",
+        "EVENTS": "Evenimente",
+        "PARTNERS": "Parteneri",
+        "BLOG": "Blog",
+        "CONTACT": "Contact",
+        "LANGUAGE": "EN"
+    },
+    "BANNER": {
+        "BECOME_A_MEMBER": "Devino membru",
+        "BECOME_A_PARTNER": "Devino partener"
+    }
+}

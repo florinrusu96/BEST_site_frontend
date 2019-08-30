@@ -11,6 +11,17 @@ import {BackendClientService} from './backend-client/backend-client.service';
 import {ToastrModule} from 'ngx-toastr';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {MatListModule} from '@angular/material/list'
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import { BecomeMemberComponent } from './become-member/become-member.component';
+import { BecomePartnerComponent } from './become-partner/become-partner.component';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -19,6 +30,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NavigationComponent,
     BlogPageComponent,
     BlogPostComponent,
+    BecomeMemberComponent,
+    BecomePartnerComponent,
 
   ],
   imports: [
@@ -27,6 +40,16 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppRoutingModule,
     ToastrModule.forRoot(),
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+    }),
+    MatListModule,
+    MatMenuModule,
+    MatButtonModule,
   ],
   providers: [
     BackendClientService,
