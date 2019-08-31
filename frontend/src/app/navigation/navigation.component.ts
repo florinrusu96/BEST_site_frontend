@@ -46,10 +46,12 @@ export class NavigationComponent implements OnInit {
   }
 
   goToEventPage(id: string){
-    //DO NOT CHANGE THIS
+    /*
+    DO NOT CHANGE THIS
+    This lets our navbar have the events directly from our backend. If we didn't navigate first to '/' our event page componnet would not re-init 
+    and the data would stay the same.
+    */
     this.router.navigate(['/']).then(() => this.router.navigateByUrl('/events/' + id));
-    //This lets our navbar have the events directly from our backend. If we didn't navigate first to '/' our event page componnet would not re-init
-    //and the data would stay the same.
   }
 
 }
