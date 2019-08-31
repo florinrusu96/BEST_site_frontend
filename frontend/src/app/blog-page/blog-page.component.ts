@@ -16,7 +16,6 @@ export class BlogPageComponent implements OnInit {
 
   ngOnInit() {
     this.backendClient.listBlogPosts().subscribe(blogPosts => this.blogPosts = blogPosts)
-    console.log(this.blogPosts);
   }
 
 }

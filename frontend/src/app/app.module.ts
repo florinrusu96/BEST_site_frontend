@@ -18,6 +18,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { BecomeMemberComponent } from './become-member/become-member.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
+import { EventPageComponent } from './event-page/event-page.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -32,6 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BlogPostComponent,
     BecomeMemberComponent,
     BecomePartnerComponent,
+    EventPageComponent,
 
   ],
   imports: [
