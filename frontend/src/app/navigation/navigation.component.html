@@ -2,8 +2,17 @@
   <mat-nav-list class="navigation">
     <mat-list-item routerLink="home-page"><span translate>NAVBAR.HOME</span></mat-list-item>
     <mat-list-item><span translate>NAVBAR.STORY</span></mat-list-item>
-    <mat-list-item><span translate>NAVBAR.EVENTS</span></mat-list-item>
     <mat-list-item><span translate>NAVBAR.PARTNERS</span></mat-list-item>
+    <mat-list-item>
+        <mat-menu #eventsMenu="matMenu">
+            <tr *ngFor="let event of events">
+                <button (click)='goToEventPage(event.id)' mat-menu-item>{{event.event_name}}</button>
+            </tr>
+        </mat-menu>
+        <button class="mat-list-item" mat-icon-button [matMenuTriggerFor]="eventsMenu">
+            <span translate>NAVBAR.EVENTS</span>
+        </button>
+    </mat-list-item>
     <mat-list-item routerLink="blog-page"><span translate>NAVBAR.BLOG</span></mat-list-item>
     <mat-list-item><span translate>NAVBAR.CONTACT</span></mat-list-item>
     <mat-list-item><span (click)="changeLanguage()" class="flag-border flag-icon flag-icon-{{translate.currentLang}}"></span></mat-list-item>

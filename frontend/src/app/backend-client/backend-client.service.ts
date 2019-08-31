@@ -5,7 +5,7 @@ import {Observable, throwError} from 'rxjs';
 import {ToastrService} from 'ngx-toastr';
 import {catchError} from 'rxjs/operators';
 import {BlogPost} from '../models/blog-post';
-
+import {Event} from '../models/events';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
@@ -59,10 +59,10 @@ export class BackendClientService {
       catchError(this.handleError(this.toastrService)));
   }
 
-  // ------Blog Posts ----
+  // ------ Blog Posts ----
 
   getBlogPost(blogPostId: string): Observable<BlogPost> {
-    return this.get<BlogPost>('blog-posts/' + blogPostId);
+    return this.get<BlogPost>('blog-posts/' + blogPostId + '/');
   }
 
   listBlogPosts(params?: object): Observable<BlogPost[]> {
@@ -74,8 +74,18 @@ export class BackendClientService {
   }
 
   deleteBlogPost(blogPost: BlogPost): Observable<BlogPost> {
-    return this.delete('blog-posts//' + blogPost.id);
+    return this.delete('blog-posts/' + blogPost.id);
   }
+
+   // ------ Events ----
+
+   getEventList(): Observable<Event[]>{
+    return this.get<Event[]>('events/')
+   }
+
+   getEvent(eventId: string): Observable<Event>{
+    return this.get<Event>('events/' + eventId + '/');
+   }
 
 
 }
