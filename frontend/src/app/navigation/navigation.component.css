@@ -4,6 +4,7 @@
     right: 0;
     position: absolute;
     margin-right: 48px;
+    z-index: 3;
 }
 
 .mat-list-item{
@@ -13,34 +14,79 @@
 
 .banner{
     text-align: center;
-    height: 600px;
+    height: 100%;
     width: 100%;
-    background-image: url('src/assets/images/background.png')
+    min-height: calc(100% - 100px);
+    background-position: center;
+    background-image:
+        linear-gradient(black, black),
+        url('src/assets/images/banner.jpg');
+    background-size: cover;
+    background-blend-mode: saturation;
 }
 
-.divider-banner{
-    height: 80px;
+.banner-social-media {
+    position: relative;
+    align-content: center;
+    bottom: 11%;
+    left: 3%;
+    font-size: 60px;
+    color: #fff;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider-banner-top{
+    height: 50px;
     width: 100%;
-    background-color:#4691bd;
+    background-color: #595959;
+}
+
+.divider-banner-bottom{
+    height: 100px;
+    width: 100%;
+    background-color: #595959;
 }
 
 .become-member-button{
-    position: relative;
+    position: absolute;
     border-radius: 0px;
+    border: 0px;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    font-size: 25px;
+    bottom: 15%;
+    left: 25%;
 }
 
 .become-partner-button{
-    position: relative;
+    position: absolute;
     border-radius: 0px;
+    border: 0px;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    font-size: 25px;
+    bottom: 15%;
+    right: 25%;
 }
 
 .logo{
-    position: relative;
+    left: calc(50% - 350px);
+    top: calc(50% - 200px);
+    position: absolute;
+    width: 700px;
+    height: 400px;
 }
 
 .banner-content{
     position: relative;
-    top: 20%;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
 }
 
 .flag-icon {
@@ -48,4 +94,22 @@
     border-bottom: 2px solid white;
     background-color: white;
     text-align: center;
+}
+
+.mat-list-item:hover{
+    background: transparent;
+}
+
+.navbar_link:hover {
+    border-bottom: 3px solid #ffa615;
+    border-radius: 1px;
+    padding-top: 3px;
+}
+
+span.navbar_link {
+    font-size: 20px;
+}
+
+.link_icon, .link_icon:hover, .link_icon:active {
+    color: #fff;
 }

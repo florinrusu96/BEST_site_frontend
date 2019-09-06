@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\backend-client",
+    "\\src\\app\\become-member",
+    "\\src\\app\\blog-page",
+    "\\src\\app\\event-page",
+    "\\src\\app\\home-page",
+    "\\src\\app\\models",
+    "\\src\\app\\navigation"
+  ],
+  "SelectedNode": "\\src\\app\\app.component.html",
+  "PreviewInSolutionExplorer": false
+}
