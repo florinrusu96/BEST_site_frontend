@@ -1,5 +1,7 @@
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -13,12 +15,14 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {MatListModule} from '@angular/material/list'
+import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { BecomeMemberComponent } from './become-member/become-member.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import { EventPageComponent } from './event-page/event-page.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -34,7 +38,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BecomeMemberComponent,
     BecomePartnerComponent,
     EventPageComponent,
-
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +56,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatListModule,
     MatMenuModule,
     MatButtonModule,
+    FormsModule,
+    CommonModule,
   ],
   providers: [
     BackendClientService,

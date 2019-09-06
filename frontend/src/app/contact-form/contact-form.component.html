@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h1>Contact us!</h1>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+
+    <div class="form-group">
+      <input placeholder="Name" type="text" class="form-control" id="name"
+             required
+             [(ngModel)]="contactFormData.name" name="name">
+    </div>
+
+    <div class="form-group">
+      <input placeholder="Email address" type="text" class="form-control" id="email"
+             required
+             [(ngModel)]="contactFormData.email" name="email">
+    </div>
+
+    <div class="form-group">
+      <input placeholder="Subject" type="text" class="form-control" id="subject"
+             required
+             [(ngModel)]="contactFormData.subject" name="subject">
+    </div>
+
+    <div class="form-group">
+      <input placeholder="Write us here..." type="textarea" class="form-control" id="content"
+             required
+             [(ngModel)]="contactFormData.content" name="content">
+    </div>
+
+    <button type="submit" class="btn btn-success" id="submit">Submit</button>
+
+  </form>
+</div>
