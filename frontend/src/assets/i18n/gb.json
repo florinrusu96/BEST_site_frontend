@@ -12,6 +12,20 @@
     "BANNER": {
         "BECOME_A_MEMBER": "Become a member",
         "BECOME_A_PARTNER": "Become a partner"
+    },
+    "HOMEPAGE": {
+        "OUR": "OUR",
+        "STORY": "STORY",
+        "VALUES": "VALUES",
+        "BEST": "Board of European Students of Technology (BEST) ",
+        "OUR_STORY": "is an international organisation present all across Europe. Since its founding in 19XX, BEST has helped countless students overcome their limits and achieve sky-high goals.",
+        "LBGS": " Local BEST Groups (LBGs) ",
+        "LBGS_TODAY": "Today, 6",
+        "LBGS_STORY": "are active in Romania & Republic of Moldova. Our members aim not only at self development, but strive for a better prepared community of students, continent-wide.",
+        "FLEXIBILITY": "FLEXIBILITY",
+        "FRIENDSHIP": "FRIENDSHIP",
+        "LEARNING": "LEARNING",
+        "IMPROVEMENT": "IMPROVEMENT",
+        "FUN": "FUN"
     }
-    
 }
