@@ -25,7 +25,7 @@ export class NavigationComponent implements OnInit {
   faYoutube = faYoutube;
   
   constructor(
-    private translate: TranslateService,
+    public translate: TranslateService,
     private backendService: BackendClientService,
     private router: Router) {
     // this language will be used as a fallback when a translation isn't found in the current language
