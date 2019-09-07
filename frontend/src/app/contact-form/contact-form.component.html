@@ -1,33 +1,19 @@
-<div class="container">
+<div class="form-container">
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Nume">
+  </mat-form-field>
 
-  <h1>Contact us!</h1>
-  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Enter your email" [formControl]="email" required>
+    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
 
-    <div class="form-group">
-      <input placeholder="Name" type="text" class="form-control" id="name"
-             required
-             [(ngModel)]="contactFormData.name" name="name">
-    </div>
+  <mat-form-field appearance="outline">
+    <input matInput placeholder="Subiect">
+  </mat-form-field>
 
-    <div class="form-group">
-      <input placeholder="Email address" type="text" class="form-control" id="email"
-             required
-             [(ngModel)]="contactFormData.email" name="email">
-    </div>
+  <mat-form-field appearance="outline">
+    <textarea matInput placeholder="Scrie-ne aici!"></textarea>
+  </mat-form-field>
 
-    <div class="form-group">
-      <input placeholder="Subject" type="text" class="form-control" id="subject"
-             required
-             [(ngModel)]="contactFormData.subject" name="subject">
-    </div>
-
-    <div class="form-group">
-      <input placeholder="Write us here..." type="textarea" class="form-control" id="content"
-             required
-             [(ngModel)]="contactFormData.content" name="content">
-    </div>
-
-    <button type="submit" class="btn btn-success" id="submit">Submit</button>
-
-  </form>
 </div>

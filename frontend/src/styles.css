@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~ngx-toastr/toastr';
-@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
 
 .pad-all-24{
   padding: 24px;
