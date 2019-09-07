@@ -1,19 +1,48 @@
-<div class="form-container">
-  <mat-form-field appearance="outline">
-    <input matInput placeholder="Nume">
-  </mat-form-field>
+<section fxLayout="row wrap" fxLayoutAlign="center center">
+    <mat-card fxFlex="500px" fxFlex.xs="100%">
+        <mat-card-title>Contact us!</mat-card-title>
+        <form [formGroup]="contactForm" autocomplete="off" novalidate (ngSubmit)="onSubmit(contactForm.value)"
+            fxLayout="column wrap" fxLayoutAlign="center center" fxLayoutGap="10px">
+            <mat-card-content>
+                
+                <div class="row">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Name" formControlName="name" id="name">
+                    <mat-error *ngIf="hasError('name', 'required')">Name is required</mat-error>
+                    <mat-error *ngIf="hasError('name', 'maxlength')">You have more than 50 characters</mat-error>
+                </mat-form-field>
+                </div>
 
-  <mat-form-field appearance="outline">
-    <input matInput placeholder="Enter your email" [formControl]="email" required>
-    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-  </mat-form-field>
+                <div class="row">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Email" formControlName="email" id="email">
+                    <mat-error *ngIf="hasError('email', 'required')">Email is required</mat-error>
+                    <mat-error *ngIf="hasError('email', 'maxlength')">You have more than 50 characters</mat-error>
+                </mat-form-field>
+                </div>
 
-  <mat-form-field appearance="outline">
-    <input matInput placeholder="Subiect">
-  </mat-form-field>
+                <div class="row">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Subject" formControlName="subject" id="subject">
+                    <mat-error *ngIf="hasError('subject', 'required')">Subject is required</mat-error>
+                    <mat-error *ngIf="hasError('subject', 'maxlength')">You have more than 50 characters</mat-error>
+                </mat-form-field>
+                </div>
 
-  <mat-form-field appearance="outline">
-    <textarea matInput placeholder="Scrie-ne aici!"></textarea>
-  </mat-form-field>
+                <div class="row">
+                <mat-form-field>
+                    <textarea matInput type="text" placeholder="Content" formControlName="content" id="context"
+                                matTextareaAutosize matAutosizeMinRows=10 matAutosizeMaxRows=10></textarea>
+                    <mat-error *ngIf="hasError('content', 'required')">Content is required</mat-error>
+                    <mat-error *ngIf="hasError('content', 'maxlength')">You have more than 500 characters</mat-error>
+                </mat-form-field>
+                </div>
 
-</div>
+            </mat-card-content>
+
+            <mat-card-actions align="center">
+                <button mat-raised-button color="primary" [disabled]="!contactForm.valid">Submit</button>
+            </mat-card-actions>
+        </form>
+    </mat-card>
+</section>

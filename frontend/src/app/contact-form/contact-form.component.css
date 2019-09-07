@@ -1,8 +1,6 @@
-.form-container {
-    display: flex;
-    flex-direction: column;
+mat-form-field{
+    width: 400px;
 }
-  
-.form-container > * {
-    width: 100%;
+mat-card-title{
+    text-align: center;
 }
