@@ -4,6 +4,12 @@ import { BackendClientService } from './../backend-client/backend-client.service
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 import { Router } from '@angular/router';
+
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
@@ -13,7 +19,11 @@ export class NavigationComponent implements OnInit {
 
   events: Event[];
   private eventPage: EventPageComponent;
-
+  faFacebook = faFacebook;
+  faTwitter = faTwitter;
+  faInstagram = faInstagram;
+  faYoutube = faYoutube;
+  
   constructor(
     private translate: TranslateService,
     private backendService: BackendClientService,
@@ -33,7 +43,7 @@ export class NavigationComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+
   }
 
   changeLanguage(){
