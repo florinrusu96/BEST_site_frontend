@@ -1,0 +1,153 @@
+h1.h1_title {
+    font-size: 4em;
+    margin-top: 0px;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+h2.h2_title {
+    font-size: 2em;
+    margin-bottom: 0px;
+    font-weight: normal;
+    z-index: 2;
+}
+
+.title {
+    text-align: center;
+    padding-top: 60px;
+    position: relative;
+}
+
+.green_title_line {
+    width: auto;
+    height: 31px;
+    background-color: #8ac940;
+    position: absolute;
+    align-content: center;
+    margin-top: -38px;
+    left: 43%;
+    right: 43%;
+}
+
+.orange_title_line {
+    width: auto;
+    height: 31px;
+    background-color: #ffa615;
+    position: absolute;
+    align-content: center;
+    margin-top: -38px;
+    left: 43%;
+    right: 43%;
+}
+
+.our_story {
+    font-size: 33px;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 65px;
+}
+
+.our_story_bold {
+    font-weight: bold;
+}
+
+.lbgs_europe {
+    margin-top: 50px;
+    text-align: center;
+    height: 80%;
+    width: 100%;
+    background-position: center;
+    background-image: url('src/assets/images/lbgs_europe.png');
+    background-size: cover;
+}
+
+.lbgs_romania {
+    margin-top: 50px;
+    text-align: center;
+    height: 80%;
+    width: 100%;
+    background-position: center;
+    background-image: url('src/assets/images/lbgs_romania.png');
+    background-size: cover;
+}
+
+.values {
+    margin-top: 100px;
+}
+
+.value_col{
+    width: 25%;
+    display: inline-block;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.value_second_row {
+    margin-top: 50px;
+}
+
+.value_second_row, .value_first_row  {
+    width: 100%;
+}
+
+.icon_flexibility {
+    background-image: url('src/assets/images/flexibility_icon.png');
+}
+
+.icon_friendship {
+    background-image: url('src/assets/images/friendship_icon.png');
+}
+
+.icon_learning {
+    background-image: url('src/assets/images/learning_icon.png');
+}
+
+.icon_improvement {
+    background-image: url('src/assets/images/improvement_icon.png');
+}
+
+.icon_fun {
+    background-image: url('src/assets/images/fun_icon.png');
+}
+
+.icon_flexibility, .icon_friendship, .icon_learning, .icon_improvement, .icon_fun {
+    width: auto;
+    height: 200px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+.value_flexibility {
+    color: #0671BA;
+}
+
+.value_friendship {
+    color: #75C043;
+}
+
+.value_learning {
+    color: #F9A622;
+}
+
+.value_improvement {
+    color: #F9A622;
+}
+
+.value_fun {
+    color: #0671BA;
+}
+
+.fix_first_row {
+    width: 12.5%;
+    display: inline-block;
+}
+
+.fix_second_row {
+    width: 25%;
+    display: inline-block;
+}
