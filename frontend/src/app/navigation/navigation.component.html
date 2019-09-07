@@ -1,7 +1,7 @@
 <!-- <div class="divider-banner-top"></div> -->
 <div class="banner">
   <mat-nav-list class="navigation">
-    <mat-list-item routerLink="home-page"><span class="navbar_link" translate>NAVBAR.HOME</span></mat-list-item>
+    <mat-list-item routerLink="home-page" routerLinkActive="active"><span class="navbar_link" translate>NAVBAR.HOME</span></mat-list-item>
     <mat-list-item><span class="navbar_link" translate>NAVBAR.STORY</span></mat-list-item>
     <mat-list-item><span class="navbar_link"  translate>NAVBAR.PARTNERS</span></mat-list-item>
     <mat-list-item>
@@ -14,20 +14,20 @@
             <span class="navbar_link"  translate>NAVBAR.EVENTS</span>
         </button>
     </mat-list-item>
-    <mat-list-item routerLink="blog-page"><span class="navbar_link"  translate>NAVBAR.BLOG</span></mat-list-item>
+    <mat-list-item routerLink="/blog-page" routerLinkActive="active"><span class="navbar_link"  translate>NAVBAR.BLOG</span></mat-list-item>
     <mat-list-item><span class="navbar_link"  translate>NAVBAR.CONTACT</span></mat-list-item>
     <mat-list-item><span (click)="changeLanguage()" class="flag-border flag-icon flag-icon-{{translate.currentLang}}"></span></mat-list-item>
   </mat-nav-list>
   <div class='banner-content'>
     <img class="logo" src='../../assets/images/logo.png'>
-    <button class="become-member-button" mat-raised-button color='warn' ><span translate>BANNER.BECOME_A_MEMBER</span></button>
+    <button class="become-member-button " mat-raised-button color='warn' ><span translate>BANNER.BECOME_A_MEMBER</span></button>
     <button class="become-partner-button" mat-raised-button color='primary' ><span translate>BANNER.BECOME_A_PARTNER</span></button>
   </div>
   <div class='banner-social-media'>
-    <a class="link_icon" href ="https://www.facebook.com/BEST.Bucharest/"><fa-icon [icon]="faFacebook"></fa-icon></a>
-    <a class="link_icon" href ="https://www.instagram.com/best.bucharest/"><fa-icon [icon]="faInstagram"></fa-icon></a>
-    <a class="link_icon" href ="https://twitter.com/bestbucharest"><fa-icon [icon]="faTwitter"></fa-icon></a>
-    <a class="link_icon" href="https://www.youtube.com/user/bestbucuresti"><fa-icon [icon]="faYoutube"></fa-icon></a>
+    <a class="link_icon" href ="https://www.facebook.com/BEST.Bucharest/"><fa-icon size="2x" [icon]="faFacebook"></fa-icon></a>
+    <a class="link_icon" href ="https://www.instagram.com/best.bucharest/"><fa-icon size="2x" [icon]="faInstagram"></fa-icon></a>
+    <a class="link_icon" href ="https://twitter.com/bestbucharest"><fa-icon size="2x" [icon]="faTwitter"></fa-icon></a>
+    <a class="link_icon" href="https://www.youtube.com/user/bestbucuresti"><fa-icon size="2x" [icon]="faYoutube"></fa-icon></a>
   </div>
 </div>
 <div class="divider-banner-bottom"></div>

@@ -4,6 +4,7 @@ h1.h1_title {
     z-index: 2;
     position: relative;
     margin-bottom: 0px;
+    font-family: 'KoHo', sans-serif;
 }
 
 h2.h2_title {
@@ -11,12 +12,14 @@ h2.h2_title {
     margin-bottom: 0px;
     font-weight: normal;
     z-index: 2;
+    font-family: 'KoHo', sans-serif;
 }
 
 .title {
     text-align: center;
     padding-top: 60px;
     position: relative;
+    font-family: 'KoHo', sans-serif;
 }
 
 .green_title_line {
@@ -28,6 +31,7 @@ h2.h2_title {
     margin-top: -38px;
     left: 43%;
     right: 43%;
+    font-family: 'KoHo', sans-serif;
 }
 
 .orange_title_line {
@@ -39,6 +43,7 @@ h2.h2_title {
     margin-top: -38px;
     left: 43%;
     right: 43%;
+    font-family: 'KoHo', sans-serif;
 }
 
 .our_story {
@@ -47,10 +52,12 @@ h2.h2_title {
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 65px;
+    font-family: 'KoHo', sans-serif;
 }
 
 .our_story_bold {
     font-weight: bold;
+    font-family: 'KoHo', sans-serif;
 }
 
 .lbgs_europe {
@@ -61,6 +68,7 @@ h2.h2_title {
     background-position: center;
     background-image: url('src/assets/images/lbgs_europe.png');
     background-size: cover;
+    
 }
 
 .lbgs_romania {
@@ -120,6 +128,7 @@ h2.h2_title {
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 15px;
+    font-family: 'KoHo', sans-serif;
 }
 
 .value_flexibility {
