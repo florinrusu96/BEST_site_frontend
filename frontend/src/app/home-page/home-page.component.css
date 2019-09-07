@@ -85,14 +85,7 @@ h2.h2_title {
     text-align: center;
 }
 
-.value_first_row{
-    padding-right: 12.5%;
-    padding-left: 12.5%;
-}
-
 .value_second_row {
-    padding-right: 25%;
-    padding-left: 25%;
     margin-top: 50px;
 }
 
@@ -147,4 +140,14 @@ h2.h2_title {
 
 .value_fun {
     color: #0671BA;
+}
+
+.fix_first_row {
+    width: 12.5%;
+    display: inline-block;
+}
+
+.fix_second_row {
+    width: 25%;
+    display: inline-block;
 }
