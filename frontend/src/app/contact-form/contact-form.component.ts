@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { IContactForm } from '../models/contact-form';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { BackendClientService } from './../backend-client/backend-client.service';
+import { TranslateService } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
-import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
@@ -12,7 +15,16 @@ export class ContactFormComponent implements OnInit {
   contactForm: FormGroup;
   submitted = false;
 
-  constructor() { }
+  constructor(
+    private translate: TranslateService,
+    private backendService: BackendClientService,
+    private router: Router) {
+    // this language will be used as a fallback when a translation isn't found in the current language
+    translate.setDefaultLang('ro');
+    // the lang to use, if the lang isn't available, it will use the current loader to get them
+    translate.use('ro');
+
+    }
 
   ngOnInit() {
     this.contactForm = new FormGroup({

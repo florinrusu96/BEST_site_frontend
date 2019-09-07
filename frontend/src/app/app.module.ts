@@ -20,6 +20,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
 import { BecomeMemberComponent } from './become-member/become-member.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import { EventPageComponent } from './event-page/event-page.component';
@@ -60,6 +61,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatIconModule,
     ReactiveFormsModule,
   ],
   providers: [

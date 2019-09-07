@@ -1,6 +1,14 @@
+.contact-form-container {
+    display: flex; /* or inline-flex */
+}
+
 mat-form-field{
     width: 400px;
 }
 mat-card-title{
     text-align: center;
+}
+
+textarea {
+    vertical-align: text-bottom;
 }

@@ -12,6 +12,14 @@
     "BANNER": {
         "BECOME_A_MEMBER": "Become a member",
         "BECOME_A_PARTNER": "Become a partner"
+    },
+    "CONTACT_FORM": {
+        "TITLE": "Contact us!",
+        "NAME": "Name",
+        "EMAIL": "Email address",
+        "SUBJECT": "Subject",
+        "CONTENT": "Write us here...",
+        "BUTTON": "Submit",
+        "ERR_FIELD_EMPTY": "This field is mandatory."
     }
-    
 }

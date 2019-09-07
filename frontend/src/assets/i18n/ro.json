@@ -12,5 +12,14 @@
     "BANNER": {
         "BECOME_A_MEMBER": "Devino membru",
         "BECOME_A_PARTNER": "Devino partener"
+    },
+    "CONTACT_FORM": {
+        "TITLE": "Contactează-ne!",
+        "NAME": "Nume",
+        "EMAIL": "Adresă de email",
+        "SUBJECT": "Subiect",
+        "CONTENT": "Scrie-ne aici...",
+        "BUTTON": "Trimite",
+        "ERR_FIELD_EMPTY": "Câmp obligatoriu."
     }
 }
