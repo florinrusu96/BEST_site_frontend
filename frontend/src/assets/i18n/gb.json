@@ -19,7 +19,7 @@
         "EMAIL": "Email address",
         "SUBJECT": "Subject",
         "CONTENT": "Write us here...",
-        "BUTTON": "Submit",
+        "BUTTON": "SUBMIT",
         "ERR_FIELD_EMPTY": "This field is mandatory."
     }
 }

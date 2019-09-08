@@ -19,7 +19,7 @@
         "EMAIL": "Adresă de email",
         "SUBJECT": "Subiect",
         "CONTENT": "Scrie-ne aici...",
-        "BUTTON": "Trimite",
+        "BUTTON": "TRIMITE",
         "ERR_FIELD_EMPTY": "Câmp obligatoriu."
     }
 }
