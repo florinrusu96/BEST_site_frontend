@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { IContactForm } from '../models/contact-form';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators, FormGroupDirective } from '@angular/forms';
 import { BackendClientService } from './../backend-client/backend-client.service';
 import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
@@ -13,6 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ContactFormComponent implements OnInit {
   contactForm: FormGroup;
+  @ViewChild(FormGroupDirective) formGroupDirective: FormGroupDirective;
 
   constructor(
     private translate: TranslateService,
@@ -29,7 +30,7 @@ export class ContactFormComponent implements OnInit {
       name: new FormControl('', [Validators.required, Validators.maxLength(50)]),
       email: new FormControl('', [Validators.required, Validators.maxLength(50), Validators.email]),
       subject: new FormControl('', [Validators.required, Validators.maxLength(50)]),
-      content: new FormControl('', [Validators.required, Validators.maxLength(500)]),
+      content: new FormControl('', [Validators.required, Validators.maxLength(1000)]),
     });
   }
 
@@ -39,12 +40,11 @@ export class ContactFormComponent implements OnInit {
 
   public onSubmit(contactFormInstance) {
     if (this.contactForm.valid) {
-      this.createContactForm(contactFormInstance);
+      this.createMessage(contactFormInstance);
     }
   }
 
-  /* rename this shit */
-  private createContactForm(contactFormData) {
+  private createMessage(contactFormData) {
 
     const formContent: IContactForm = {
       name: contactFormData.name,
@@ -53,8 +53,10 @@ export class ContactFormComponent implements OnInit {
       content: contactFormData.content,
     };
 
-    /* TODO: send msg to backend */
-    this.contactForm.reset();
+    /* TODO: delete this line */
+    console.log(JSON.stringify(formContent));
+
+    this.formGroupDirective.resetForm();
     this.toastr.success('Message sent!');
   }
 }

@@ -20,6 +20,9 @@
         "SUBJECT": "Subiect",
         "CONTENT": "Scrie-ne aici...",
         "BUTTON": "TRIMITE",
-        "ERR_FIELD_EMPTY": "Câmp obligatoriu."
+        "ERR_FIELD_EMPTY": "Câmp obligatoriu.",
+        "CONTACT_FORM.ERR_MAX_CHARS": "Maxim 50 de caractere!",
+        "CONTACT_FORM.ERR_MAX_CHARS_CONTENT": "Maxim 1000 de caractere!",
+        "ERR_INVALID_EMAIL": "Adresă de email invalidă!"
     }
 }

@@ -20,6 +20,9 @@
         "SUBJECT": "Subject",
         "CONTENT": "Write us here...",
         "BUTTON": "SUBMIT",
-        "ERR_FIELD_EMPTY": "This field is mandatory."
+        "ERR_FIELD_EMPTY": "This field is mandatory.",
+        "ERR_MAX_CHARS": "Maximum 50 characters!",
+        "ERR_MAX_CHARS_CONTENT": "Maximum 1000 characters!",
+        "ERR_INVALID_EMAIL": "Invalid email!"
     }
 }
