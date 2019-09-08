@@ -9,12 +9,12 @@
 
 .mat-list-item {
     color:white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'KoHo', sans-serif;
 }
 
 .banner {
     text-align: center;
-    height: 100%;
+    height: 850px;
     width: 100%;
     min-height: calc(100% - 100px);
     background-position: center;
@@ -23,6 +23,7 @@
         url('src/assets/images/banner.jpg');
     background-size: cover;
     background-blend-mode: saturation;
+    position: relative;
 }
 
 .banner-social-media {
@@ -30,9 +31,9 @@
     align-content: center;
     bottom: 11%;
     left: 3%;
-    font-size: 60px;
+    padding-bottom: 15px;
     color: #fff;
-    width: 300px;
+    width: 250px;
     display: flex;
     justify-content: space-between;
 }
@@ -40,23 +41,21 @@
 .divider-banner-top {
     height: 50px;
     width: 100%;
-    background-color: #595959;
+    background-color: #2e2f2f;
 }
 
 .divider-banner-bottom {
     height: 100px;
     width: 100%;
-    background-color: #595959;
+    background-color: #2e2f2f;
 }
 
 .become-member-button {
     position: absolute;
     border-radius: 0px;
     border: 0px;
-    width: 300px;
-    height: 50px;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     bottom: 15%;
     left: 25%;
 }
@@ -65,10 +64,8 @@
     position: absolute;
     border-radius: 0px;
     border: 0px;
-    width: 300px;
-    height: 50px;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     bottom: 15%;
     right: 25%;
 }
@@ -90,8 +87,7 @@
 }
 
 .flag-icon {
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border: 2px solid white;
     background-color: white;
     text-align: center;
 }

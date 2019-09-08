@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: 'blog-page', component: BlogPageComponent},
   {path: 'home-page', component: HomePageComponent},
   {path: 'events/:id', component: EventPageComponent},
-  { path: '', redirectTo: '/home-page', pathMatch: 'full'},
+  {path: '', redirectTo: '/home-page', pathMatch: 'full'}
 ];
 
 @NgModule({

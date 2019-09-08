@@ -20,6 +20,7 @@ import { BecomeMemberComponent } from './become-member/become-member.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import { EventPageComponent } from './event-page/event-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './footer/footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -35,6 +36,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BecomeMemberComponent,
     BecomePartnerComponent,
     EventPageComponent,
+    FooterComponent,
 
   ],
   imports: [
