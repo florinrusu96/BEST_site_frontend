@@ -4,6 +4,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { BackendClientService } from './../backend-client/backend-client.service';
 import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact-form',
@@ -12,11 +13,11 @@ import { Router } from '@angular/router';
 })
 export class ContactFormComponent implements OnInit {
   contactForm: FormGroup;
-  submitted = false;
 
   constructor(
     private translate: TranslateService,
     private backendService: BackendClientService,
+    private toastr: ToastrService,
     private router: Router) {
 
     translate.setDefaultLang('ro');
@@ -36,14 +37,14 @@ export class ContactFormComponent implements OnInit {
     return this.contactForm.controls[controlName].hasError(errorName);
   }
 
-  public onSubmit(contactFormData) {
+  public onSubmit(contactFormInstance) {
     if (this.contactForm.valid) {
-      this.createContactForm(contactFormData);
+      this.createContactForm(contactFormInstance);
     }
   }
 
+  /* rename this shit */
   private createContactForm(contactFormData) {
-    this.submitted = true;
 
     const formContent: IContactForm = {
       name: contactFormData.name,
@@ -51,9 +52,9 @@ export class ContactFormComponent implements OnInit {
       subject: contactFormData.subject,
       content: contactFormData.content,
     };
-  }
 
-  get diagnostic() {
-    return null;
+    /* TODO: send msg to backend */
+    this.contactForm.reset();
+    this.toastr.success('Message sent!');
   }
 }

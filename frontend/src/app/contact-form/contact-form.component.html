@@ -33,7 +33,7 @@
                     <input matInput type="text" placeholder="{{'CONTACT_FORM.SUBJECT' | translate}}"
                         formControlName="subject" id="subject">
                     <mat-icon matSuffix>subject</mat-icon>
-                    <mat-error *ngIf="hasError('subject', 'required')">{{'CONTACT_FORM.ERR_FIELD_EMPTY' | translate}}
+                    <mat-error *ngIf="hasError('subject', 'required') && !submitted">{{'CONTACT_FORM.ERR_FIELD_EMPTY' | translate}}
                     </mat-error>
                     <mat-error *ngIf="hasError('subject', 'maxlength')">You have more than 50 characters</mat-error>
                 </mat-form-field>
