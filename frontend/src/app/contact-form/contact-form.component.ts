@@ -52,10 +52,6 @@ export class ContactFormComponent implements OnInit {
       subject: contactFormData.subject,
       content: contactFormData.content,
     };
-
-    /* TODO: delete this line */
-    console.log(JSON.stringify(formContent));
-
     this.formGroupDirective.resetForm();
     this.toastr.success('Message sent!');
   }
