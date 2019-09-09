@@ -23,7 +23,7 @@ export class NavigationComponent implements OnInit {
   faTwitter = faTwitter;
   faInstagram = faInstagram;
   faYoutube = faYoutube;
-  
+
   constructor(
     public translate: TranslateService,
     private backendService: BackendClientService,
@@ -34,10 +34,10 @@ export class NavigationComponent implements OnInit {
     translate.use('ro');
     this.backendService.getEventList().subscribe(
       events => {
-        this.events = events
+        this.events = events;
       },
-      error =>{
-        console.log(error)
+      error => {
+        console.log(error);
       }
     );
    }
@@ -46,19 +46,18 @@ export class NavigationComponent implements OnInit {
 
   }
 
-  changeLanguage(){
-    if(this.translate.currentLang == "gb"){
-      this.translate.use("ro")
-    }
-    else{
-      this.translate.use("gb")
+  changeLanguage() {
+    if (this.translate.currentLang == 'gb') {
+      this.translate.use('ro');
+    } else {
+      this.translate.use('gb');
     }
   }
 
-  goToEventPage(id: string){
+  goToEventPage(id: string) {
     /*
     DO NOT CHANGE THIS
-    This lets our navbar have the events directly from our backend. If we didn't navigate first to '/' our event page componnet would not re-init 
+    This lets our navbar have the events directly from our backend. If we didn't navigate first to '/' our event page componnet would not re-init
     and the data would stay the same.
     */
     this.router.navigate(['/']).then(() => this.router.navigateByUrl('/events/' + id));

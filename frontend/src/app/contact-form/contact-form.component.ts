@@ -34,7 +34,7 @@ export class ContactFormComponent implements OnInit {
     });
   }
 
-  public hasError = (controlName: string, errorName: string) =>{
+  public hasError = (controlName: string, errorName: string) => {
     return this.contactForm.controls[controlName].hasError(errorName);
   }
 

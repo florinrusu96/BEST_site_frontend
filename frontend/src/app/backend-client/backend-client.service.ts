@@ -79,11 +79,11 @@ export class BackendClientService {
 
    // ------ Events ----
 
-   getEventList(): Observable<Event[]>{
-    return this.get<Event[]>('events/')
+   getEventList(): Observable<Event[]> {
+    return this.get<Event[]>('events/');
    }
 
-   getEvent(eventId: string): Observable<Event>{
+   getEvent(eventId: string): Observable<Event> {
     return this.get<Event>('events/' + eventId + '/');
    }
 
