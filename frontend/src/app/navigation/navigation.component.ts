@@ -23,6 +23,7 @@ export class NavigationComponent implements OnInit {
   faTwitter = faTwitter;
   faInstagram = faInstagram;
   faYoutube = faYoutube;
+  public flagString = 'gb';
 
   constructor(
     public translate: TranslateService,
@@ -49,8 +50,10 @@ export class NavigationComponent implements OnInit {
   changeLanguage() {
     if (this.translate.currentLang == 'gb') {
       this.translate.use('ro');
+      this.flagString = 'gb';
     } else {
       this.translate.use('gb');
+      this.flagString = 'ro';
     }
   }
 

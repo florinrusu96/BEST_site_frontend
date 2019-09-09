@@ -14,11 +14,10 @@
             <span class="navbar_link"  translate>NAVBAR.EVENTS</span>
         </button>
     </mat-list-item>
-    <mat-list-item routerLink="/contact-form"><span translate>NAVBAR.CONTACT</span></mat-list-item>
     <mat-list-item routerLink="/blog-page" routerLinkActive="active"><span class="navbar_link"  translate>NAVBAR.BLOG</span></mat-list-item>
-    <mat-list-item><span class="navbar_link"  translate>NAVBAR.CONTACT</span></mat-list-item>
+    <mat-list-item routerLink="/contact-form"><span class="navbar_link"  translate>NAVBAR.CONTACT</span></mat-list-item>
 
-    <mat-list-item><span (click)="changeLanguage()" class="flag-border flag-icon flag-icon-{{translate.currentLang}}"></span></mat-list-item>
+    <mat-list-item><span (click)="changeLanguage()" class="flag-border flag-icon flag-icon-{{flagString}}"></span></mat-list-item>
   </mat-nav-list>
   <div class='banner-content'>
     <img class="logo" src='../../assets/images/logo.png'>
