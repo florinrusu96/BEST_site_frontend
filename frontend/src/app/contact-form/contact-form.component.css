@@ -1,0 +1,27 @@
+mat-form-field{
+    width: 50%;
+    margin: 0.5%;
+}
+
+mat-card-title{
+    text-align: center;
+    margin: 5%;
+}
+
+mat-card {
+    box-shadow: none !important;
+    margin: 2%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-item {
+    flex-grow: 1;    
+    align-self: center;
+    text-align: center;
+}

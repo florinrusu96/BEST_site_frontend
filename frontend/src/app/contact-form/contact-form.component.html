@@ -1,0 +1,64 @@
+<div class="contact-container">
+
+    <mat-card class="contact-item">
+
+        <mat-card-title><span translate>CONTACT_FORM.TITLE</span></mat-card-title>
+
+        <form [formGroup]="contactForm" autocomplete="off" novalidate (ngSubmit)="onSubmit(contactForm.value)">
+
+            <div>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="{{'CONTACT_FORM.NAME' | translate}}" formControlName="name"
+                        id="name">
+                    <mat-icon matSuffix>person</mat-icon>
+                    <mat-error *ngIf="hasError('name', 'required')">{{'CONTACT_FORM.ERR_FIELD_EMPTY' | translate}}
+                    </mat-error>
+                    <mat-error *ngIf="hasError('name', 'maxlength')">{{'CONTACT_FORM.ERR_MAX_CHARS' | translate}}</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="{{'CONTACT_FORM.EMAIL' | translate}}"
+                        formControlName="email" id="email">
+                    <mat-icon matSuffix>email</mat-icon>
+                    <mat-error *ngIf="hasError('email', 'required')">{{'CONTACT_FORM.ERR_FIELD_EMPTY' | translate}} </mat-error>
+                    <mat-error *ngIf="hasError('email', 'maxlength')">{{'CONTACT_FORM.ERR_MAX_CHARS' | translate}}</mat-error>
+                    <mat-error *ngIf="hasError('email', 'email')">{{'CONTACT_FORM.ERR_INVALID_EMAIL' | translate}}</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-form-field>
+                    <input matInput type="text" placeholder="{{'CONTACT_FORM.SUBJECT' | translate}}"
+                        formControlName="subject" id="subject">
+                    <mat-icon matSuffix>subject</mat-icon>
+                    <mat-error *ngIf="hasError('subject', 'required') && !submitted">
+                        {{'CONTACT_FORM.ERR_FIELD_EMPTY' | translate}}
+                    </mat-error>
+                    <mat-error *ngIf="hasError('subject', 'maxlength')">{{'CONTACT_FORM.ERR_MAX_CHARS' | translate}}</mat-error>
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-form-field appearance="outline">
+                    <textarea matInput type="text" placeholder="{{'CONTACT_FORM.CONTENT' | translate}}"
+                        formControlName="content" id="content" matTextareaAutosize matAutosizeMinRows=10
+                        matAutosizeMaxRows=10></textarea>
+                    <mat-error *ngIf="hasError('content', 'required')">{{'CONTACT_FORM.ERR_FIELD_EMPTY' | translate}}
+                    </mat-error>
+                    <mat-error *ngIf="hasError('content', 'maxlength')">{{'CONTACT_FORM.ERR_MAX_CHARS_CONTENT' | translate}}</mat-error>
+                </mat-form-field>
+            </div>
+
+            <button mat-raised-button color="primary" [disabled]="!contactForm.valid"><span
+                    translate>CONTACT_FORM.BUTTON</span></button>
+        </form>
+
+    </mat-card>
+
+    <mat-card class="contact-item">
+        <mat-card-title>TODO</mat-card-title>
+    </mat-card>
+
+</div>

@@ -13,6 +13,18 @@
         "BECOME_A_MEMBER": "Become a member",
         "BECOME_A_PARTNER": "Become a partner"
     },
+    "CONTACT_FORM": {
+        "TITLE": "Contact us!",
+        "NAME": "Name",
+        "EMAIL": "Email address",
+        "SUBJECT": "Subject",
+        "CONTENT": "Write us here...",
+        "BUTTON": "SUBMIT",
+        "ERR_FIELD_EMPTY": "This field is mandatory.",
+        "ERR_MAX_CHARS": "Maximum 50 characters!",
+        "ERR_MAX_CHARS_CONTENT": "Maximum 1000 characters!",
+        "ERR_INVALID_EMAIL": "Invalid email!"
+    },
     "HOMEPAGE": {
         "OUR": "OUR",
         "STORY": "STORY",
