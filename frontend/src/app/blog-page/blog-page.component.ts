@@ -9,7 +9,7 @@ import {BlogPost} from "../models/blog-post";
 })
 export class BlogPageComponent implements OnInit {
 
-  private blogPosts: BlogPost[];
+  public blogPosts: BlogPost[];
 
   constructor(private backendClient: BackendClientService) {
   }

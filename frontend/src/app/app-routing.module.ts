@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: 'home-page', component: HomePageComponent},
   {path: 'events/:id', component: EventPageComponent},
   {path: 'contact-form', component: ContactFormComponent},
+  {path: '', redirectTo: '/home-page', pathMatch: 'full'}
 ];
 
 @NgModule({

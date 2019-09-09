@@ -1,51 +1,111 @@
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
     right: 0;
     position: absolute;
     margin-right: 48px;
+    z-index: 3;
 }
 
-.mat-list-item{
+.mat-list-item {
     color:white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'KoHo', sans-serif;
 }
 
-.banner{
+.banner {
     text-align: center;
-    height: 600px;
+    height: 850px;
     width: 100%;
-    background-image: url('src/assets/images/background.png')
+    min-height: calc(100% - 100px);
+    background-position: center;
+    background-image:
+        linear-gradient(black, black),
+        url('src/assets/images/banner.jpg');
+    background-size: cover;
+    background-blend-mode: saturation;
+    position: relative;
 }
 
-.divider-banner{
-    height: 80px;
+.banner-social-media {
+    position: relative;
+    align-content: center;
+    bottom: 11%;
+    left: 3%;
+    padding-bottom: 15px;
+    color: #fff;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.divider-banner-top {
+    height: 50px;
     width: 100%;
-    background-color:#4691bd;
+    background-color: #2e2f2f;
 }
 
-.become-member-button{
-    position: relative;
+.divider-banner-bottom {
+    height: 100px;
+    width: 100%;
+    background-color: #2e2f2f;
+}
+
+.become-member-button {
+    position: absolute;
     border-radius: 0px;
+    border: 0px;
+    color: #fff;
+    font-size: 20px;
+    bottom: 15%;
+    left: 25%;
 }
 
-.become-partner-button{
-    position: relative;
+.become-partner-button {
+    position: absolute;
     border-radius: 0px;
+    border: 0px;
+    color: #fff;
+    font-size: 20px;
+    bottom: 15%;
+    right: 25%;
 }
 
-.logo{
-    position: relative;
+.logo {
+    left: calc(50% - 350px);
+    top: calc(50% - 200px);
+    position: absolute;
+    width: 700px;
+    height: 410px;
 }
 
-.banner-content{
+.banner-content {
     position: relative;
-    top: 20%;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
 }
 
 .flag-icon {
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border: 2px solid white;
     background-color: white;
     text-align: center;
+}
+
+.mat-list-item:hover {
+    background: transparent;
+}
+
+.navbar_link:hover {
+    border-bottom: 3px solid #ffa615;
+    border-radius: 1px;
+    padding-top: 3px;
+}
+
+span.navbar_link {
+    font-size: 20px;
+}
+
+.link_icon, .link_icon:hover, .link_icon:active {
+    color: #fff;
 }
