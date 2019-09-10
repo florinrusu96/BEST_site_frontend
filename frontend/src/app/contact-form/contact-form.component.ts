@@ -17,7 +17,7 @@ export class ContactFormComponent implements OnInit {
 
   constructor(
     private backendService: BackendClientService,
-    private toastr: ToastrService) {
+    private toastrService: ToastrService) {
     }
 
   ngOnInit() {
@@ -37,6 +37,9 @@ export class ContactFormComponent implements OnInit {
     if (this.contactForm.valid) {
       this.createMessage(contactFormInstance);
     }
+    else {
+      this.toastrService.error('Error');
+    }
   }
 
   private createMessage(contactFormData) {
@@ -47,7 +50,7 @@ export class ContactFormComponent implements OnInit {
       subject: contactFormData.subject,
       content: contactFormData.content,
     };
+    this.backendService.sendEmail(formContent).subscribe(() => this.toastrService.success('Message Sent'));
     this.formGroupDirective.resetForm();
-    this.toastr.success('Message sent!');
   }
 }
