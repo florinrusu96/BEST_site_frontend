@@ -19,7 +19,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
-import {MatInputModule} from '@angular/material';
+import {MatInputModule, MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from '@angular/material';
 import {MatIconModule} from '@angular/material/icon';
 import { BecomeMemberComponent } from './become-member/become-member.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
@@ -67,10 +67,15 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatInputModule,
     MatIconModule,
     ReactiveFormsModule,
+    MatDialogModule,
+  ],
+  entryComponents: [
+    ContactFormComponent,
   ],
   providers: [
     BackendClientService,
     HttpClient,
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
   ],
   bootstrap: [AppComponent]
 })

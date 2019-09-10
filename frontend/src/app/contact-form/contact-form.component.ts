@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import { IContactForm } from '../models/contact-form';
 import { FormControl, FormGroup, Validators, FormGroupDirective } from '@angular/forms';
 import { BackendClientService } from './../backend-client/backend-client.service';
@@ -16,13 +16,8 @@ export class ContactFormComponent implements OnInit {
   @ViewChild(FormGroupDirective) formGroupDirective: FormGroupDirective;
 
   constructor(
-    private translate: TranslateService,
     private backendService: BackendClientService,
-    private toastr: ToastrService,
-    private router: Router) {
-
-    translate.setDefaultLang('ro');
-    translate.use('ro');
+    private toastr: ToastrService) {
     }
 
   ngOnInit() {
