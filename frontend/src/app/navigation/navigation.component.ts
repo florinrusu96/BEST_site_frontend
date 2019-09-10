@@ -72,6 +72,7 @@ export class NavigationComponent implements OnInit {
 
   openCreateForm(): void {
     const dialogConfig = new MatDialogConfig();
+    dialogConfig.width = '60%';
     const dialogRef = this.dialog.open(ContactFormComponent, dialogConfig);
   }
 
