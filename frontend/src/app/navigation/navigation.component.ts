@@ -9,6 +9,9 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { MatDialogConfig, MatDialog } from '@angular/material';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
+import { ComponentType } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-navigation',
@@ -28,7 +31,8 @@ export class NavigationComponent implements OnInit {
   constructor(
     public translate: TranslateService,
     private backendService: BackendClientService,
-    private router: Router) {
+    private router: Router,
+    public dialog: MatDialog, ) {
     // this language will be used as a fallback when a translation isn't found in the current language
     translate.setDefaultLang('ro');
     // the lang to use, if the lang isn't available, it will use the current loader to get them
@@ -65,5 +69,12 @@ export class NavigationComponent implements OnInit {
     */
     this.router.navigate(['/']).then(() => this.router.navigateByUrl('/events/' + id));
   }
+
+  openCreateForm(): void {
+    const dialogConfig = new MatDialogConfig();
+    dialogConfig.width = '60%';
+    const dialogRef = this.dialog.open(ContactFormComponent, dialogConfig);
+  }
+
 
 }

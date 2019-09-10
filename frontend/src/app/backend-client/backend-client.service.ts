@@ -6,6 +6,7 @@ import {ToastrService} from 'ngx-toastr';
 import {catchError} from 'rxjs/operators';
 import {BlogPost} from '../models/blog-post';
 import {Event} from '../models/events';
+import { IContactForm } from '../models/contact-form';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
@@ -25,11 +26,11 @@ export class BackendClientService {
     this.endpoint = 'http://localhost:8000/';
   }
 
-  private handleError(toastr: ToastrService) {
+  private handleError(toastrService: ToastrService) {
     return (error: any) => {
       console.error(error);
       const message = JSON.stringify(error.error) || error.message;
-      toastr.error(message);
+      toastrService.error(message);
       return throwError(error);
     };
   }
@@ -87,5 +88,8 @@ export class BackendClientService {
     return this.get<Event>('events/' + eventId + '/');
    }
 
-
+   // ------ ContactForm ----
+   sendEmail(contactForm: IContactForm): Observable<IContactForm>{
+     return this.post<IContactForm>('forms/', contactForm);
+   }
 }

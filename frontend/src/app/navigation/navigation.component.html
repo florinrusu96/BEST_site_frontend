@@ -1,7 +1,7 @@
 <!-- <div class="divider-banner-top"></div> -->
 <div class="banner">
   <mat-nav-list class="navigation">
-    <mat-list-item routerLink="home-page" routerLinkActive="active"><span class="navbar_link" translate>NAVBAR.HOME</span></mat-list-item>
+    <mat-list-item routerLink="/home-page" routerLinkActive="active"><span class="navbar_link" translate>NAVBAR.HOME</span></mat-list-item>
     <mat-list-item><span class="navbar_link" translate>NAVBAR.STORY</span></mat-list-item>
     <mat-list-item><span class="navbar_link"  translate>NAVBAR.PARTNERS</span></mat-list-item>
     <mat-list-item>
@@ -15,7 +15,7 @@
         </button>
     </mat-list-item>
     <mat-list-item routerLink="/blog-page" routerLinkActive="active"><span class="navbar_link"  translate>NAVBAR.BLOG</span></mat-list-item>
-    <mat-list-item routerLink="/contact-form"><span class="navbar_link"  translate>NAVBAR.CONTACT</span></mat-list-item>
+    <mat-list-item (click)="openCreateForm()"><span class="navbar_link"  translate>NAVBAR.CONTACT</span></mat-list-item>
 
     <mat-list-item><span (click)="changeLanguage()" class="flag-border flag-icon flag-icon-{{flagString}}"></span></mat-list-item>
   </mat-nav-list>
