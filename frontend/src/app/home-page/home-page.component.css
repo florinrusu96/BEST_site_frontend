@@ -1,5 +1,5 @@
 h1.h1_title {
-    font-size: 4em;
+    font-size: 5em;
     margin-top: 0px;
     z-index: 2;
     position: relative;
@@ -8,49 +8,37 @@ h1.h1_title {
 }
 
 h2.h2_title {
-    font-size: 2em;
-    margin-bottom: 0px;
-    font-weight: normal;
-    z-index: 2;
+    font-size: 3em;
+    margin-bottom: -16px;
+    margin-top: -5px;
+    z-index: 3;
     font-family: 'KoHo', sans-serif;
+    position: relative;
+    font-weight: bold;
 }
 
 .title {
-    text-align: center;
     padding-top: 60px;
-    position: relative;
     font-family: 'KoHo', sans-serif;
+}
+
+.blue_title_line {
+    height: 100%;
+    background: linear-gradient(180deg, #fff 50%, #0071b9 50%);
 }
 
 .green_title_line {
-    width: auto;
-    height: 31px;
-    background-color: #8ac940;
-    position: absolute;
-    align-content: center;
-    margin-top: -38px;
-    left: 43%;
-    right: 43%;
-    font-family: 'KoHo', sans-serif;
+    height: 100%;
+    background: linear-gradient(180deg, #fff 50%, #8ac940 50%);
 }
 
 .orange_title_line {
-    width: auto;
-    height: 31px;
-    background-color: #ffa615;
-    position: absolute;
-    align-content: center;
-    margin-top: -38px;
-    left: 43%;
-    right: 43%;
-    font-family: 'KoHo', sans-serif;
+    height: 100%;
+    background: linear-gradient(180deg, #fff 50%, #ffa615 50%);
 }
 
 .our_story {
-    font-size: 33px;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    font-size: 30px;
     margin-top: 65px;
     font-family: 'KoHo', sans-serif;
 }
@@ -60,103 +48,34 @@ h2.h2_title {
     font-family: 'KoHo', sans-serif;
 }
 
-.lbgs_europe {
-    margin-top: 50px;
-    text-align: center;
-    height: 80%;
-    width: 100%;
-    background-position: center;
-    background-image: url('src/assets/images/lbgs_europe.png');
-    background-size: cover;
-    
+.left-tile {
+    text-align: right;
 }
 
-.lbgs_romania {
-    margin-top: 50px;
-    text-align: center;
-    height: 80%;
-    width: 100%;
-    background-position: center;
-    background-image: url('src/assets/images/lbgs_romania.png');
-    background-size: cover;
+.homepage_images {
+    width: 65%;
 }
 
-.values {
-    margin-top: 100px;
-}
-
-.value_col{
-    width: 25%;
-    display: inline-block;
-    font-size: 45px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.value_second_row {
-    margin-top: 50px;
-}
-
-.value_second_row, .value_first_row  {
-    width: 100%;
-}
-
-.icon_flexibility {
-    background-image: url('src/assets/images/flexibility_icon.png');
-}
-
-.icon_friendship {
-    background-image: url('src/assets/images/friendship_icon.png');
-}
-
-.icon_learning {
-    background-image: url('src/assets/images/learning_icon.png');
-}
-
-.icon_improvement {
-    background-image: url('src/assets/images/improvement_icon.png');
-}
-
-.icon_fun {
-    background-image: url('src/assets/images/fun_icon.png');
-}
-
-.icon_flexibility, .icon_friendship, .icon_learning, .icon_improvement, .icon_fun {
-    width: auto;
-    height: 200px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 15px;
+.green_button, .blue_button, .orange_button {
     font-family: 'KoHo', sans-serif;
+    margin-top: 35px;
+    border-radius: 0px;
+    box-shadow: unset;
+    font-size: 27px;
+    color: #fff;
+    padding: 2px 40px;
+    margin-left: 25%;
+    margin-right: 30%;
 }
 
-.value_flexibility {
-    color: #0671BA;
+.blue_button {
+    background: #0071b9;
 }
 
-.value_friendship {
-    color: #75C043;
+.green_button {
+    background: #8ac940;
 }
 
-.value_learning {
-    color: #F9A622;
-}
-
-.value_improvement {
-    color: #F9A622;
-}
-
-.value_fun {
-    color: #0671BA;
-}
-
-.fix_first_row {
-    width: 12.5%;
-    display: inline-block;
-}
-
-.fix_second_row {
-    width: 25%;
-    display: inline-block;
+.orange_button {
+    background: #ffa615;
 }

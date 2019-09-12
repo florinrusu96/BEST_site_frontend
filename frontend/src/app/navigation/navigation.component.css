@@ -27,37 +27,37 @@
 }
 
 .divider-banner-bottom {
-    height: 100px;
+    height: 200px;
     width: 100%;
-    background-color: #2e2f2f;
+    background-repeat: no-repeat;
+    background-image: url('src/assets/images/mazga_verde.png');
+    background-size: cover;
 }
 
-.become-member-button {
+.become-member-button, .become-partner-button {
     position: absolute;
     border-radius: 0px;
     border: 0px;
     color: #fff;
     font-size: 20px;
-    bottom: 15%;
+    bottom: 25%;
+    width: 14em;
+}
+
+.become-member-button {
     left: 25%;
 }
 
 .become-partner-button {
-    position: absolute;
-    border-radius: 0px;
-    border: 0px;
-    color: #fff;
-    font-size: 20px;
-    bottom: 15%;
     right: 25%;
 }
 
 .logo {
-    left: calc(50% - 350px);
-    top: calc(50% - 200px);
+    left: calc(50% - 299px);
+    top: calc(35% - 165px);
     position: absolute;
-    width: 700px;
-    height: 410px;
+    width: auto;
+    height: 330px;
 }
 
 .banner-content {
