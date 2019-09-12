@@ -27,7 +27,6 @@ import { EventPageComponent } from './event-page/event-page.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
-
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }

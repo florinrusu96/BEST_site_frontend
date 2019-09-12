@@ -39,5 +39,11 @@
         "LEARNING": "LEARNING",
         "IMPROVEMENT": "IMPROVEMENT",
         "FUN": "FUN"
+    },
+    "FOOTER": {
+        "TOP_TEXT": "Stay up to date with everything we do. Subscribe to our newsletter!",
+        "UNIVERSITY": "University POLITEHNICA of Bucharest, Rectorat Building, AN220A",
+        "ADDRESS": "313 Splaiul Independenței, 060042, Bucharest, Sector 6",
+        "SUBSCRIBE": "Subscribe"
     }
 }

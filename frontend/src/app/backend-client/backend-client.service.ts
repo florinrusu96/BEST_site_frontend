@@ -89,7 +89,7 @@ export class BackendClientService {
    }
 
    // ------ ContactForm ----
-   sendEmail(contactForm: IContactForm): Observable<IContactForm>{
+   sendEmail(contactForm: IContactForm): Observable<IContactForm> {
      return this.post<IContactForm>('forms/', contactForm);
    }
 }
