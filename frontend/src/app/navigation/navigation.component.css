@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     right: 0;
-    position: absolute;
     margin-right: 48px;
+    margin-left: 48px;
     z-index: 3;
 }
 
@@ -24,24 +24,6 @@
     background-size: cover;
     background-blend-mode: saturation;
     position: relative;
-}
-
-.banner-social-media {
-    position: relative;
-    align-content: center;
-    bottom: 11%;
-    left: 3%;
-    padding-bottom: 15px;
-    color: #fff;
-    width: 250px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.divider-banner-top {
-    height: 50px;
-    width: 100%;
-    background-color: #2e2f2f;
 }
 
 .divider-banner-bottom {
@@ -87,9 +69,11 @@
 }
 
 .flag-icon {
-    border: 2px solid white;
+    border: 1.5px solid white;
+    border-radius: 3px;
     background-color: white;
     text-align: center;
+    background-size: cover;
 }
 
 .mat-list-item:hover {
@@ -108,4 +92,15 @@ span.navbar_link {
 
 .link_icon, .link_icon:hover, .link_icon:active {
     color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+}
+
+.center-menu, .left-menu {
+    display: inline-flex;
+}
+
+.left-menu {
+    font-size: 11px;
 }
