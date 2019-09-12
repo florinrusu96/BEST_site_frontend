@@ -36,8 +36,7 @@ export class ContactFormComponent implements OnInit {
   public onSubmit(contactFormInstance) {
     if (this.contactForm.valid) {
       this.createMessage(contactFormInstance);
-    }
-    else {
+    } else {
       this.toastrService.error('Error');
     }
   }
