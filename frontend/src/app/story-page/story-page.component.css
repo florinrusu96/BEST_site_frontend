@@ -47,21 +47,26 @@
 .rectangle 
 {
     width: 30px;
-    height: 290px;
+    height: 240px;
     background: #a8a9ad;
 
     position: absolute;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    top:174px;
+    top:199px;
     
 }
 
+
 .story-container{
-    margin-top:150px;
+    margin-top:100px;
     position: relative;
     padding-bottom: calc(((4 * ((50% - 0.5px) * 1)) + 0px) + 3px);
+}
+
+.position-first-circle{
+    top: 50px;
 }
 
 .position-second-circle{
@@ -113,9 +118,128 @@
 }
 
 .circle-full-second{
-    top:1050px;
+    top:1100px;
 }
 
 .circle-full-third{
-    top:1100px;
+    top:1200px;
+}
+
+.text{
+    font-family: 'KoHo', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    color: rgb(0, 113, 185);
+    font-weight: bold;
+}
+
+.text-89{
+    left: 18%;
+    top: 13%;
+}
+
+.text-89-container{
+    height: 10%;
+    position: absolute;
+    right: 0;
+    left: 55%;
+    width: 600px;
+}
+
+.text-89-content{
+    font-family: 'KoHo', sans-serif;
+    font-size: 42px;
+    color: #333333;
+}
+
+.image-89{
+    height: 250px;
+    width: 600px;
+    right: 7px;
+    position: absolute;
+}
+
+.text-97{
+    left: 18%;
+    top: 13%;
+}
+
+.text-97-container{
+    height: 10%;
+    position: absolute;
+    top: 9%;
+    right: 55%;
+    width: 600px;
+}
+
+.text-97-content{
+    font-family: 'KoHo', sans-serif;
+    font-size: 42px;
+    color: #333333;
+}
+
+.image-97{
+    height: 600px;
+    width: 600px;
+    right: 7px;
+    position: absolute;
+}
+
+.text-16{
+    left: 18%;
+    top: 13%;
+}
+
+.text-16-container{
+    height: 10%;
+    position: absolute;
+    top: 16%;
+    left: 55%;
+    width: 600px;
+}
+
+.text-16-content{
+    font-family: 'KoHo', sans-serif;
+    font-size: 42px;
+    color: #333333;
+}
+
+.image-16{
+    height: 250px;
+    width: 600px;
+    right: 7px;
+    position: absolute;
+}
+
+.text-bottom{
+    font-family: 'KoHo', sans-serif;
+    font-size: 42px;
+    color: #333333;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 1200px;
+    top:45%;
+    display: grid;
+    text-align: center;
+}
+
+.text-bottom-1{
+    margin-bottom: 24px;
+}
+
+.maps{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    top:65%;
+}
+
+.map{
+    width: 800px;
+    height: 500px;
 }
