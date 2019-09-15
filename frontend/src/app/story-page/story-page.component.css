@@ -1,0 +1,121 @@
+.circle-left {
+    border: 8px solid #a8a9ad;
+    background-color: #FFFFFF;
+    height: 50px;
+    border-radius:50%;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.circle-left::after{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #a8a9ad;
+    border-bottom: 13px solid transparent;
+}
+
+.circle-right {
+    border: 8px solid #a8a9ad;
+    background-color: #FFFFFF;
+    height: 50px;
+    border-radius:50%;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.circle-right::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid #a8a9ad;
+    border-bottom: 13px solid transparent;
+}
+
+.rectangle 
+{
+    width: 30px;
+    height: 290px;
+    background: #a8a9ad;
+
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top:174px;
+    
+}
+
+.story-container{
+    margin-top:150px;
+    position: relative;
+    padding-bottom: calc(((4 * ((50% - 0.5px) * 1)) + 0px) + 3px);
+}
+
+.position-second-circle{
+    top: 348px;
+}
+
+.position-second-rectangle{
+    top:475px;
+    height: 200px;
+}
+
+.position-third-circle{
+    top: 600px;
+}
+
+.last-rectangle{
+    width: 30px;
+    height: 290px;
+    background: #a8a9ad;
+
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top:780px;
+    border-bottom: 13px solid transparent;
+}
+.last-rectangle::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #a8a9ad;
+    top: 100%;
+    border-radius: 50%;
+}
+
+.circle-full{
+    width: 30px;
+    height: 30px;
+    background: #a8a9ad;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top:1000px;
+}
+
+.circle-full-second{
+    top:1050px;
+}
+
+.circle-full-third{
+    top:1100px;
+}
