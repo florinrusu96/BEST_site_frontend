@@ -21,6 +21,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule, MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from '@angular/material';
 import {MatIconModule} from '@angular/material/icon';
+import {MatGridListModule} from '@angular/material/grid-list';
 import { BecomeMemberComponent } from './become-member/become-member.component';
 import { BecomePartnerComponent } from './become-partner/become-partner.component';
 import { EventPageComponent } from './event-page/event-page.component';
@@ -65,6 +66,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    MatGridListModule,
     ReactiveFormsModule,
     MatDialogModule,
   ],

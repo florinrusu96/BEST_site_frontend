@@ -26,24 +26,34 @@
         "ERR_INVALID_EMAIL": "Adresă de email invalidă!"
     },
     "HOMEPAGE": {
-        "OUR": "",
+        "OUR": "-",
+        "US": "NOI",
         "STORY": "POVESTE",
         "VALUES": "VALORI",
         "BEST": "Board of European Students of Technology (BEST) ",
         "OUR_STORY": "este o organizație internațională prezentă în toată Europa. De la fondarea sa în 19XX, BEST a ajutat nenumărați studenți să-și depășească limitele și să atingă obiective înalte.",
-        "LBGS": " Local BEST Groups (LBGs) ",
-        "LBGS_TODAY": "Today, 6",
-        "LBGS_STORY": "are active in Romania & Republic of Moldova. Our members aim not only at self development, but strive for a better prepared community of students, continent-wide.",
-        "FLEXIBILITY": "FLEXIBILITY",
-        "FRIENDSHIP": "FRIENDSHIP",
-        "LEARNING": "LEARNING",
-        "IMPROVEMENT": "IMPROVEMENT",
-        "FUN": "FUN"
+        "EVENTS" : "EVENIMENTE",
+        "OUR_EVENTS": "For the past XX years, we have organised events together with, and for the sake of, students. From hackathons and engineering contests to treasure hunts and international summer schools, we do whatever we can to challenge ourselves.",
+        "PARTNERS": "PARTENERI",
+        "OUR_PARTNERS": "There’s a full list of names we ought to be thanking for the great progress of our events, but since this paragraph is too short to comprise it, we’ll let you see for yourself.",
+        "ABOUT": "DESRE",
+        "ABOUT_US": "Wanna get in touch with us? We’re one online message away. Find out all the places where you can drop us a line, and read a brief list of the most frequently asked questions we receive.",
+        "STORY_BUTTON": "Citeste povestea completa",
+        "EVENTS_BUTTON": "Vezi tot ce facem",
+        "PARTNERS_BUTTON": "Vezi lista completa",
+        "ABOUT_BUTTON": "Check us out"
     },
     "FOOTER": {
         "TOP_TEXT": "Rămâneți la curent cu tot ceea ce facem. Aboneaza-te la newsletter-ul nostru!",
         "UNIVERSITY": "Universitatea POLITEHNICA din București, Cladirea Rectorat, AN220A",
         "ADDRESS": "313 Splaiul Independenței, 060042, Bucharest, Sector 6",
         "SUBSCRIBE": "Aboneaza-te"
+    },
+    "STORY": {
+        "FLEXIBILITY": "FLEXIBILITY",
+        "FRIENDSHIP": "FRIENDSHIP",
+        "LEARNING": "LEARNING",
+        "IMPROVEMENT": "IMPROVEMENT",
+        "FUN": "FUN"
     }
 }
