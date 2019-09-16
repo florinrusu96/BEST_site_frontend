@@ -52,7 +52,7 @@ export class NavigationComponent implements OnInit {
   }
 
   changeLanguage() {
-    if (this.translate.currentLang == 'gb') {
+    if (this.translate.currentLang === 'gb') {
       this.translate.use('ro');
       this.flagString = 'gb';
     } else {

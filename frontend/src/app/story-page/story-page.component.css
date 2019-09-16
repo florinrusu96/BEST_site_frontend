@@ -243,3 +243,58 @@
     width: 800px;
     height: 500px;
 }
+
+.values{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    top:83%;
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+}
+
+.icon-values{
+    width: 250px;
+    height: 250px;
+}
+
+.margin-bottom-figure{
+    margin-bottom: 0px;
+}
+
+.value_flexibility {
+    color: #0671BA;
+}
+
+.value_friendship {
+    color: #75C043;
+}
+
+.value_learning {
+    color: #F9A622;
+}
+
+.value_improvement {
+    color: #F9A622;
+}
+
+.value_fun {
+    color: #0671BA;
+}
+
+.value_first_row{
+    display: flex;
+    font-size: 46px;
+    font-weight: bold;
+
+}
+
+.value_second_row{
+    display: flex;
+    position: absolute;
+    left: 15%;
+    font-size: 46px;
+    font-weight: bold;
+}
