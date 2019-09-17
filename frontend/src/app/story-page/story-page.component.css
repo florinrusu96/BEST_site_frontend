@@ -1,0 +1,300 @@
+.circle-left {
+    border: 8px solid #a8a9ad;
+    background-color: #FFFFFF;
+    height: 50px;
+    border-radius:50%;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.circle-left::after{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 26px solid #a8a9ad;
+    border-bottom: 13px solid transparent;
+}
+
+.circle-right {
+    border: 8px solid #a8a9ad;
+    background-color: #FFFFFF;
+    height: 50px;
+    border-radius:50%;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.circle-right::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 25%;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-left: 26px solid #a8a9ad;
+    border-bottom: 13px solid transparent;
+}
+
+.rectangle 
+{
+    width: 30px;
+    height: 240px;
+    background: #a8a9ad;
+
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top:199px;
+    
+}
+
+
+.story-container{
+    margin-top:100px;
+    position: relative;
+    padding-bottom: calc(((4 * ((50% - 0.5px) * 1)) + 0px) + 3px);
+}
+
+.position-first-circle{
+    top: 50px;
+}
+
+.position-second-circle{
+    top: 348px;
+}
+
+.position-second-rectangle{
+    top:475px;
+    height: 200px;
+}
+
+.position-third-circle{
+    top: 600px;
+}
+
+.last-rectangle{
+    width: 30px;
+    height: 290px;
+    background: #a8a9ad;
+
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top:780px;
+    border-bottom: 13px solid transparent;
+}
+.last-rectangle::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #a8a9ad;
+    top: 100%;
+    border-radius: 50%;
+}
+
+.circle-full{
+    width: 30px;
+    height: 30px;
+    background: #a8a9ad;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    top:1000px;
+}
+
+.circle-full-second{
+    top:1100px;
+}
+
+.circle-full-third{
+    top:1200px;
+}
+
+.text{
+    font-family: 'KoHo', sans-serif;
+    font-size: 24px;
+    position: absolute;
+    color: rgb(0, 113, 185);
+    font-weight: bold;
+}
+
+.text-89{
+    left: 18%;
+    top: 13%;
+}
+
+.text-89-container{
+    height: 10%;
+    position: absolute;
+    right: 0;
+    left: 55%;
+    width: 600px;
+}
+
+.text-89-content{
+    font-family: 'KoHo', sans-serif;
+    font-size: 42px;
+    color: #333333;
+}
+
+.image-89{
+    height: 250px;
+    width: 600px;
+    right: 7px;
+    position: absolute;
+}
+
+.text-97{
+    left: 18%;
+    top: 13%;
+}
+
+.text-97-container{
+    height: 10%;
+    position: absolute;
+    top: 9%;
+    right: 55%;
+    width: 600px;
+}
+
+.text-97-content{
+    font-family: 'KoHo', sans-serif;
+    font-size: 42px;
+    color: #333333;
+}
+
+.image-97{
+    height: 600px;
+    width: 600px;
+    right: 7px;
+    position: absolute;
+}
+
+.text-16{
+    left: 18%;
+    top: 13%;
+}
+
+.text-16-container{
+    height: 10%;
+    position: absolute;
+    top: 16%;
+    left: 55%;
+    width: 600px;
+}
+
+.text-16-content{
+    font-family: 'KoHo', sans-serif;
+    font-size: 42px;
+    color: #333333;
+}
+
+.image-16{
+    height: 250px;
+    width: 600px;
+    right: 7px;
+    position: absolute;
+}
+
+.text-bottom{
+    font-family: 'KoHo', sans-serif;
+    font-size: 42px;
+    color: #333333;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 1200px;
+    top:45%;
+    display: grid;
+    text-align: center;
+}
+
+.text-bottom-1{
+    margin-bottom: 24px;
+}
+
+.maps{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    top:65%;
+}
+
+.map{
+    width: 800px;
+    height: 500px;
+}
+
+.values{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    top:83%;
+    text-align: center;
+    font-family: 'KoHo', sans-serif;
+}
+
+.icon-values{
+    width: 250px;
+    height: 250px;
+}
+
+.margin-bottom-figure{
+    margin-bottom: 0px;
+}
+
+.value_flexibility {
+    color: #0671BA;
+}
+
+.value_friendship {
+    color: #75C043;
+}
+
+.value_learning {
+    color: #F9A622;
+}
+
+.value_improvement {
+    color: #F9A622;
+}
+
+.value_fun {
+    color: #0671BA;
+}
+
+.value_first_row{
+    display: flex;
+    font-size: 46px;
+    font-weight: bold;
+
+}
+
+.value_second_row{
+    display: flex;
+    position: absolute;
+    left: 15%;
+    font-size: 46px;
+    font-weight: bold;
+}
