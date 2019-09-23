@@ -1,11 +1,11 @@
 mat-form-field{
-    width: 50%;
-    margin: 0.5%;
+    width: 90%;
+    margin: 1%;
 }
 
 mat-card-title{
     text-align: center;
-    margin: 5%;
+    margin: auto;
 }
 
 mat-card {
@@ -15,13 +15,19 @@ mat-card {
 
 .contact-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
 }
 
 .contact-item {
-    flex-grow: 1;    
-    align-self: center;
     text-align: center;
+    flex: 50%;
+    margin: auto;
+}
+
+.contact-text{
+    color: black;
+    font-family: 'KoHo', sans-serif;
+    font-size:18px;
+    margin: 2%;
 }
