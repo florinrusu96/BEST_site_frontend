@@ -1,0 +1,46 @@
+.mat-card {
+    text-align: justify;
+    box-shadow: unset;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.mat-card-content {
+    font-size: 30px;
+    margin-top: 65px;
+    font-family: 'KoHo', sans-serif;
+}
+
+.mat-grid-list {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.icons {
+    margin: 5%;
+}
+
+.event-icon {
+    margin: 5%;
+}
+
+.partner-icon {
+    margin: 5%;
+}
+
+h2.h2-title {
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    line-height: 7.5%;
+}
+
+.one-fifty {
+    color: #005eaa;
+}
+
+.twenty-four {
+    font-size: 50px;
+    color: #ff7b26;
+}

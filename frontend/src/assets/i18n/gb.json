@@ -76,6 +76,20 @@
         "SECOND_PART1": "We also organise a variety of ",
         "SECOND_PART2": " - these can differ in number, structure and objectives throughout the years. See what they’re all about!",
         "INTERNAL_EVENTS": "internal events"
+    },
+    "BESTEM": {
+        "CODING": "CODING",
+        "MARATHON": "MARATHON",
+        "ONE_FIFTY": "150",
+        "PARTICIPANT": "PARTICIPANTS",
+        "APRIL": "APRIL",
+        "TWENTY_FOUR": "24",
+        "HOURS": "HOURS",
+        "BESTEM": "BEST Engineering Marathon (BESTEM)",
+        "FIRST_PARAGRAPH": " is among the largest lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.",
+        "SECOND_PARAGRAPH": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.",
+        "THIRD_PARAGRAPH": "Ut wisi enim ad minim veniam, quis nostrud exerci tation. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod:",
+        "LAST_PARAGRAPH": "Like the sound of it? Check out the official website of "
     }
 
 }
