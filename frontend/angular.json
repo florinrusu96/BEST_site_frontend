@@ -24,12 +24,17 @@
             ],
             "styles": [
               {
-                "input": "src/assets/best-themes.scss",
+                "input": "src/assets/best-themes.scss"
               },
               "src/styles.css",
-              "node_modules/flag-icon-css/css/flag-icon.css"
+              "node_modules/flag-icon-css/css/flag-icon.css",
+              "node_modules/slick-carousel/slick/slick.scss",
+              "node_modules/slick-carousel/slick/slick-theme.scss"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/slick-carousel/slick/slick.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {

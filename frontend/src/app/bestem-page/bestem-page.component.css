@@ -44,3 +44,10 @@ h2.h2-title {
     font-size: 50px;
     color: #ff7b26;
 }
+
+.carousel {
+    background: #000;
+    min-height: 300px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

@@ -49,8 +49,13 @@
     </mat-card-content>
   </mat-card>
 
-  <!-- TODO: slick carousel -->
-
+  <!-- slick carousel WIP -->
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+      <img src="{{ slide.img }}" alt="" width="100%">
+    </div>
+  </ngx-slick-carousel>
+  
   <mat-card>
     <mat-card-content>
       <span translate>BESTEM.THIRD_PARAGRAPH</span>
