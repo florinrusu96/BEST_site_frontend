@@ -1,0 +1,24 @@
+.mat-card {
+    text-align: center;
+    box-shadow: unset;
+    margin: 10%;
+}
+
+.mat-card-content {
+    font-size: 30px;
+    margin-top: 65px;
+    font-family: 'KoHo', sans-serif;
+}
+
+.special-text {
+    color: #ffa615;
+}
+
+.mat-grid-list {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.event-logo {
+    margin: 10%;
+}

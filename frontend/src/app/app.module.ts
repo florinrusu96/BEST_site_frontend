@@ -30,6 +30,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './footer/footer.component';
 import { StoryPageComponent } from './story-page/story-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { BestemPageComponent } from './event-page/bestem-page/bestem-page.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -49,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     StoryPageComponent,
     PageNotFoundComponent,
+    BestemPageComponent,
   ],
   imports: [
     FontAwesomeModule,

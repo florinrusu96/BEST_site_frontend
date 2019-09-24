@@ -70,5 +70,11 @@
     },
     "FOUR_ZERO_FOUR": {
         "NOT_FOUND": "pagina nu a fost găsită."
+    },
+    "EVENT": {
+        "FIRST": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation:",
+        "SECOND_PART1": "We also organise a variety of ",
+        "SECOND_PART2": " - these can differ in number, structure and objectives throughout the years. See what they’re all about!",
+        "INTERNAL_EVENTS": "internal events"
     }
 }
