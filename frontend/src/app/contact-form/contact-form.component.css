@@ -25,8 +25,9 @@ mat-card {
     margin: auto;
 }
 
-.contact-text{
-    color: black;
-    font-family: 'KoHo', sans-serif;
-    font-size:18px;
-    margin: 2%;
+.contact-text {
+  color: black;
+  font-family: 'KoHo', sans-serif;
+  font-size: 18px;
+  margin: 2%;
+}
