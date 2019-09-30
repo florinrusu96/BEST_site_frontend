@@ -5,6 +5,7 @@ import { BlogPageComponent } from './blog-page/blog-page.component';
 import { EventPageComponent } from './event-page/event-page.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { StoryPageComponent } from './story-page/story-page.component';
+import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: 'blog-page', component: BlogPageComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'events/:id', component: EventPageComponent},
   {path: 'contact-form', component: ContactFormComponent},
   {path: 'story-page', component: StoryPageComponent},
-  {path: '', redirectTo: '/home-page', pathMatch: 'full'}
+  {path: '', redirectTo: '/home-page', pathMatch: 'full'},
+  {path: '**', component: PageNotFoundComponent},
 ];
 
 @NgModule({
