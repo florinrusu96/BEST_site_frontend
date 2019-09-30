@@ -1,7 +1,7 @@
 {
     "BEST_BUCHAREST": "Best București",
     "NAVBAR": {
-        "HOME": "Acasa",
+        "HOME": "Acasă",
         "STORY": "Poveste",
         "EVENTS": "Evenimente",
         "PARTNERS": "Parteneri",
@@ -67,5 +67,8 @@
         "LEARNING": "LEARNING",
         "IMPROVEMENT": "IMPROVEMENT",
         "FUN": "FUN"
+    },
+    "FOUR_ZERO_FOUR": {
+        "NOT_FOUND": "pagina nu a fost găsită."
     }
 }

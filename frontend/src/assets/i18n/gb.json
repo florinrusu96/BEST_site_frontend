@@ -67,5 +67,8 @@
         "LEARNING": "LEARNING",
         "IMPROVEMENT": "IMPROVEMENT",
         "FUN": "FUN"
+    },
+    "FOUR_ZERO_FOUR": {
+        "NOT_FOUND": "not found.",
     }
 }
