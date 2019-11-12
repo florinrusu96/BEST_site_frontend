@@ -48,7 +48,7 @@
         "UNIVERSITY": "University POLITEHNICA of Bucharest, Rectorat Building, AN220A",
         "ADDRESS": "313 Splaiul Independenței, 060042, Bucharest, Sector 6",
         "SUBSCRIBE": "Subscribe"
-    }, 
+    },
     "STORY": {
         "FLEXIBILITY": "FLEXIBILITY",
         "FRIENDSHIP": "FRIENDSHIP",
@@ -69,6 +69,6 @@
         "FUN": "FUN"
     },
     "FOUR_ZERO_FOUR": {
-        "NOT_FOUND": "not found.",
+        "NOT_FOUND": "not found."
     }
 }
