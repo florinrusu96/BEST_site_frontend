@@ -12,7 +12,7 @@
     font-family: 'KoHo', sans-serif;
 }
 
-.banner {
+.banner-home {
     text-align: center;
     height: 850px;
     width: 100%;
@@ -21,6 +21,32 @@
     background-image:
         linear-gradient(black, black),
         url('src/assets/images/banner.jpg');
+    background-size: cover;
+    background-blend-mode: saturation;
+    position: relative;
+}
+
+.banner-event {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    min-height: calc(100% - 100px);
+    background-position: center;
+    background-image:
+        url('src/assets/images/events.png');
+    background-size: cover;
+    background-blend-mode: saturation;
+    position: relative;
+}
+
+.banner-story {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    min-height: calc(100% - 100px);
+    background-position: center;
+    background-image:
+        url('src/assets/images/story.png');
     background-size: cover;
     background-blend-mode: saturation;
     position: relative;
