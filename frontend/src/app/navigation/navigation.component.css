@@ -39,6 +39,33 @@
     position: relative;
 }
 
+.banner-blog {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    min-height: calc(100% - 100px);
+    background-position: center;
+    background-image:
+        url('src/assets/images/partners.png');
+    background-size: cover;
+    background-blend-mode: saturation;
+    position: relative;
+}
+
+.banner-partners {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    min-height: calc(100% - 100px);
+    background-position: center;
+    background-image:
+        url('src/assets/images/partners.png');
+    background-size: cover;
+    background-blend-mode: saturation;
+    position: relative;
+}
+
+
 .banner-story {
     text-align: center;
     height: 400px;

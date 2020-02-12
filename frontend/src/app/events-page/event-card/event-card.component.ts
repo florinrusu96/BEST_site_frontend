@@ -12,7 +12,6 @@ export class EventCardComponent {
   event: Event;
 
   constructor() { 
-    console.log(event)
   }
 
 }

@@ -32,6 +32,7 @@ import { StoryPageComponent } from './story-page/story-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EventsPageComponent } from './events-page/events-page.component';
 import { EventCardComponent } from './events-page/event-card/event-card.component';
+import { PartnersPageComponent } from './partners-page/partners-page.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -53,6 +54,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PageNotFoundComponent,
     EventsPageComponent,
     EventCardComponent,
+    PartnersPageComponent,
   ],
   imports: [
     FontAwesomeModule,

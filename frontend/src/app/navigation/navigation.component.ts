@@ -62,11 +62,7 @@ export class NavigationComponent implements OnInit {
   }
 
   goToEventPage(id: string) {
-    /*
-    DO NOT CHANGE THIS
-    This lets our navbar have the events directly from our backend. If we didn't navigate first to '/' our event page componnet would not re-init
-    and the data would stay the same.
-    */
+
     this.router.navigate(['/']).then(() => this.router.navigateByUrl('/events/' + id));
   }
 
@@ -76,5 +72,11 @@ export class NavigationComponent implements OnInit {
     const dialogRef = this.dialog.open(ContactFormComponent, dialogConfig);
   }
 
+  isEnglish(){
+    if(this.flagString === 'ro'){
+      return true;
+    }
+    return false;
+  }
 
 }

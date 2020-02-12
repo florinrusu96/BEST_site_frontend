@@ -1,3 +1,4 @@
+import { PartnersPageComponent } from './partners-page/partners-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path: 'events/:id', component: EventPageComponent},
   {path: 'contact-form', component: ContactFormComponent},
   {path: 'story-page', component: StoryPageComponent},
+  {path: 'partners-page', component: PartnersPageComponent},
   {path: '', redirectTo: '/home-page', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 ];
