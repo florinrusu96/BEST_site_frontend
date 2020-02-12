@@ -86,6 +86,19 @@
     height: 330px;
 }
 
+.events-text {
+    position: relative;
+    align-content: center;
+    font-family: 'KoHo', sans-serif;
+    font-size: 72px;
+    color: white;
+    margin-top: 50px;
+}
+
+.events{
+    font-size: 100px;
+}
+
 .banner-content {
     position: relative;
     align-content: center;

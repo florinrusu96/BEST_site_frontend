@@ -19,6 +19,10 @@
       <mat-list-item><span (click)="changeLanguage()" class="flag-border flag-icon flag-icon-{{flagString}}"></span></mat-list-item>
     </div>
     </mat-nav-list>
+  <div *ngIf="eventpagerla.isActive" class="events-text">
+    <div>OUR</div>
+    <div class="events">EVENTS</div>
+  </div>
   <div *ngIf="homepagerla.isActive" class='banner-content'>
     <img  class="logo" src='../../assets/images/logo.png'>
     <button class="become-member-button " mat-raised-button color='warn' ><span translate>BANNER.BECOME_A_MEMBER</span></button>
