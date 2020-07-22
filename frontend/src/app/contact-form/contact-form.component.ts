@@ -13,7 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ContactFormComponent implements OnInit {
   contactForm: FormGroup;
-  @ViewChild(FormGroupDirective) formGroupDirective: FormGroupDirective;
+  @ViewChild(FormGroupDirective, { static: true }) formGroupDirective: FormGroupDirective;
 
   constructor(
     private backendService: BackendClientService,
