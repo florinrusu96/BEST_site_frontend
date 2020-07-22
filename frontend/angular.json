@@ -25,13 +25,12 @@
             ],
             "styles": [
               {
-                "input": "src/assets/best-themes.scss",
+                "input": "src/assets/best-themes.scss"
               },
               "src/styles.css",
               "node_modules/flag-icon-css/css/flag-icon.css"
             ],
-            "scripts": [],
-            "es5BrowserSupport": true
+            "scripts": []
           },
           "configurations": {
             "production": {

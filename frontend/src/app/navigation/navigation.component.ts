@@ -11,7 +11,7 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { MatDialogConfig, MatDialog } from '@angular/material/dialog';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
-import { ComponentType } from '@angular/core/src/render3';
+//import { ComponentType } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-navigation',
