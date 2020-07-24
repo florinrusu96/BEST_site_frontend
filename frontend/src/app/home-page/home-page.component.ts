@@ -1,6 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { MediaObserver, MediaChange } from '@angular/flex-layout';
-import { Subscription } from 'rxjs';
+
+interface Item {
+  h1Title: string,
+  h2Title: string,
+  text: string,
+  buttonText: string,
+}
+
+interface ItemImage {
+  src: string,
+}
 
 @Component({
   selector: 'app-home-page',
@@ -8,34 +17,18 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  // mediaSubscription: Subscription;
-  // columsNo: number = 2;
-  // deviceXs: boolean;
+  /* Breakpoint is the number of columns that is shown. */
   breakpoint: number = 2;
   maxWidth: number = 600;
 
-  constructor(
-    public mediaObserver: MediaObserver
-  ) { }
+  constructor() { }
 
   ngOnInit() {
-    // this.mediaSubscription = this.mediaObserver.media$.subscribe((result: MediaChange) => {
-    //   this.deviceXs = result.mqAlias === 'xs' ? true : false;
-    //   if (this.deviceXs) {
-    //     this.columsNo = 1;
-    //   } else {
-    //     this.columsNo = 2;
-    //   }
-    // });
-    this.breakpoint = (window.innerWidth <= this.maxWidth) ? 1 : 2;
+    this.onResize(window.innerWidth);
   }
 
-  onResize(event) {
-    this.breakpoint = (event.target.innerWidth <= this.maxWidth ? 1 : 2);
+  onResize(innerWidth) {
+    /* If screen width is lower than maxWidth, show only one column. */
+    this.breakpoint = (innerWidth <= this.maxWidth ? 1 : 2);
   }
-
-  ngOnDestroy() {
-    // this.mediaSubscription.unsubscribe();
-  }
-
 }

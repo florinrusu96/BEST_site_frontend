@@ -1,5 +1,4 @@
 .title {
-    /* padding-top: 60px; */
     font-family: 'KoHo', sans-serif;
 }
 
@@ -89,6 +88,28 @@ h2.h2_title {
     background: #ffa615;
 }
 
+@media screen and (max-width: 1024px) {
+    h1.h1_title {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    h2.h2_title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.2em;
+        margin: 10%;
+    }
+
+    .green_button, .blue_button, .orange_button {
+        margin: auto;
+    }
+}
+
+/* Phone screen adjustments. */
 @media screen and (max-width: 600px) {
     h1.h1_title {
         font-size: 1.5em;
@@ -108,5 +129,4 @@ h2.h2_title {
     .green_button, .blue_button, .orange_button {
         margin: auto;
     }
-
 }

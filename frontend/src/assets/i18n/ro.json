@@ -27,7 +27,7 @@
         "ERR_INVALID_EMAIL": "Adresă de email invalidă!"
     },
     "HOMEPAGE": {
-        "OUR": "-",
+        "OUR": "",
         "US": "NOI",
         "STORY": "POVESTE",
         "VALUES": "VALORI",
@@ -37,7 +37,7 @@
         "OUR_EVENTS": "For the past XX years, we have organised events together with, and for the sake of, students. From hackathons and engineering contests to treasure hunts and international summer schools, we do whatever we can to challenge ourselves.",
         "PARTNERS": "PARTENERI",
         "OUR_PARTNERS": "There’s a full list of names we ought to be thanking for the great progress of our events, but since this paragraph is too short to comprise it, we’ll let you see for yourself.",
-        "ABOUT": "DESRE",
+        "ABOUT": "DESPRE",
         "ABOUT_US": "Wanna get in touch with us? We’re one online message away. Find out all the places where you can drop us a line, and read a brief list of the most frequently asked questions we receive.",
         "STORY_BUTTON": "Citeste povestea completa",
         "EVENTS_BUTTON": "Vezi tot ce facem",
