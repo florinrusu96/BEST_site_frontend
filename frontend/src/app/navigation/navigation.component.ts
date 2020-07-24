@@ -1,8 +1,8 @@
 import { EventPageComponent } from './../event-page/event-page.component';
 import { Event } from './../models/events';
 import { BackendClientService } from './../backend-client/backend-client.service';
-import { Component, OnInit, ViewChild } from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
+import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Router } from '@angular/router';
 
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
@@ -11,7 +11,6 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { MatDialogConfig, MatDialog } from '@angular/material/dialog';
 import { ContactFormComponent } from '../contact-form/contact-form.component';
-//import { ComponentType } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-navigation',
@@ -19,23 +18,26 @@ import { ContactFormComponent } from '../contact-form/contact-form.component';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
+  @Output() public sidenavToggle = new EventEmitter();
 
-  events: Event[];
-  private eventPage: EventPageComponent;
   faFacebook = faFacebook;
   faTwitter = faTwitter;
   faInstagram = faInstagram;
   faYoutube = faYoutube;
   public flagString = 'gb';
 
+  events: Event[];
+  private eventPage: EventPageComponent;
+
   constructor(
     public translate: TranslateService,
     private backendService: BackendClientService,
     private router: Router,
-    public dialog: MatDialog, ) {
-    // this language will be used as a fallback when a translation isn't found in the current language
+    public dialog: MatDialog,) {
+
+    // This language will be used as a fallback when a translation isn't found in the current language.
     translate.setDefaultLang('ro');
-    // the lang to use, if the lang isn't available, it will use the current loader to get them
+    // The lang to use. If the lang isn't available, it will use the current loader to get them.
     translate.use('ro');
     this.backendService.getEventList().subscribe(
       events => {
@@ -45,10 +47,10 @@ export class NavigationComponent implements OnInit {
         console.log(error);
       }
     );
-   }
+  }
 
   ngOnInit() {
-    
+
   }
 
   changeLanguage() {
@@ -62,7 +64,6 @@ export class NavigationComponent implements OnInit {
   }
 
   goToEventPage(id: string) {
-
     this.router.navigate(['/']).then(() => this.router.navigateByUrl('/events/' + id));
   }
 
@@ -72,11 +73,17 @@ export class NavigationComponent implements OnInit {
     const dialogRef = this.dialog.open(ContactFormComponent, dialogConfig);
   }
 
-  isEnglish(){
-    if(this.flagString === 'ro'){
+  isEnglish() {
+    if (this.flagString === 'ro') {
       return true;
     }
+
     return false;
+  }
+
+  /* Toogle side navigation for small window. */
+  onToggleSidenav() {
+    this.sidenavToggle.emit();
   }
 
 }

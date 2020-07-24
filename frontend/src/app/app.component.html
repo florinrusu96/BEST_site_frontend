@@ -1,7 +1,22 @@
-<div style="text-align:center"></div>
-<div class="content">
+<!-- <div class="content">
     <app-navigation></app-navigation>
     <router-outlet ></router-outlet>
     <app-footer></app-footer>
-</div>
+</div> -->
 
+<app-layout>
+    <mat-sidenav-container>
+
+        <mat-sidenav #sidenav role="navigation">
+            <app-side-navigation (sidenavClose)="sidenav.close()"></app-side-navigation>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <app-navigation (sidenavToggle)="sidenav.toggle()"></app-navigation>
+            <main>
+                <router-outlet></router-outlet>
+            </main>
+            <app-footer></app-footer>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</app-layout>
