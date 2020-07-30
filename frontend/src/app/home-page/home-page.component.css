@@ -45,7 +45,7 @@ h2.h2_title {
 
 .description {
     font-size: 1.8em;
-    margin-top: 65px;
+    margin-top: 5vh;
     font-family: 'KoHo', sans-serif;
     text-align: justify;
 }
@@ -91,20 +91,14 @@ h2.h2_title {
 @media screen and (max-width: 1024px) {
     h1.h1_title {
         font-size: 3em;
-        text-align: center;
     }
 
     h2.h2_title {
         font-size: 2em;
-        text-align: center;
     }
 
     .description {
         font-size: 1.2em;
         margin: 10%;
-    }
-
-    .green_button, .blue_button, .orange_button {
-        margin: auto;
     }
 }
