@@ -1,9 +1,10 @@
 .footer {
-    height: 350px;
+    height: 45vh;
     width: 100%;
-    margin-top: 100px;
     background-color: #2e2f2f;
-    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 .copyright-text {
@@ -20,53 +21,47 @@
 .footer-text{
     color:white;
     font-family: 'KoHo', sans-serif;
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    font-size:20px;
-}
-
-.footer-top-text{
-    top:10%;
-}
-
-.footer-best-bucharest-text{
-    top:55%;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.footer-university-text{
-    top:65%;
-}
-
-.footer-address-text{
-    top:75%;
-}
-
-.footer-email-input{
-    padding-left: 24px;
-    top: 35%;
-    background-color: white;
-    border-radius: 24px;
-    padding-right: 24px;
-    max-height: 100px;
-    height: 12%;
-    padding-top: 4px;
-    font-size:12px;
-}
-
-.footer-button{
-    margin-left:24px;
-    border-radius: 48px;
-    padding-left: 24px;
-    padding-right: 24px;
-    font-family: 'KoHo', sans-serif;
-    font-size: 16px;
+    font-size: 1.25rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .subscribe{
     top: 30%;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.footer-email-input {
+    background-color: white;
+    border-radius: 24px;
+    padding-inline: 20px;
+    margin-right: 2%;
+}
+
+.footer-button{
+    border-radius: 48px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: 'KoHo', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-text {
+        font-size: 1rem;
+    }
+
+    .footer-button {
+        margin-top: 3%;
+        margin-right: 3%;
+    }
+
+    .footer-email-input {
+        margin-left: 3%;
+    }
 }

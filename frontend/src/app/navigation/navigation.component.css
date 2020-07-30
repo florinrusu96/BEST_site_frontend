@@ -1,15 +1,61 @@
+mat-toolbar {
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.mat-icon-button {
+    color: white;
+}
+
 .navigation {
     display: flex;
     justify-content: space-between;
     right: 0;
     margin-right: 48px;
     margin-left: 48px;
-    z-index: 3;
 }
 
 .mat-list-item {
     color:white;
     font-family: 'KoHo', sans-serif;
+}
+
+.mat-list-item:hover {
+    background: transparent;
+}
+
+span.navbar_link {
+    font-size: 20px;
+}
+
+.navbar_link:hover {
+    border-bottom: 3px solid #ffa615;
+    border-radius: 1px;
+    padding-top: 3px;
+}
+
+.link_icon, .link_icon:hover, .link_icon:active {
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+}
+
+.center-menu, .left-menu {
+    display: inline-flex;
+}
+
+.left-menu {
+    font-size: 11px;
+}
+
+.flag-icon {
+    border: 1.5px solid white;
+    border-radius: 3px;
+    background-color: white;
+    text-align: center;
+    background-size: cover;
+    margin-right: 45px;
 }
 
 .banner-home {
@@ -64,7 +110,6 @@
     background-blend-mode: saturation;
     position: relative;
 }
-
 
 .banner-story {
     text-align: center;
@@ -122,7 +167,7 @@
     margin-top: 50px;
 }
 
-.events{
+.events {
     font-size: 100px;
 }
 
@@ -134,39 +179,20 @@
     min-height: 600px;
 }
 
-.flag-icon {
-    border: 1.5px solid white;
-    border-radius: 3px;
-    background-color: white;
-    text-align: center;
-    background-size: cover;
+@media screen and (max-width: 1024px) {
+    mat-toolbar{
+        border-radius: 0px;
+    }
 }
 
-.mat-list-item:hover {
-    background: transparent;
-}
-
-.navbar_link:hover {
-    border-bottom: 3px solid #ffa615;
-    border-radius: 1px;
-    padding-top: 3px;
-}
-
-span.navbar_link {
-    font-size: 20px;
-}
-
-.link_icon, .link_icon:hover, .link_icon:active {
-    color: #fff;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 16px;
-}
-
-.center-menu, .left-menu {
-    display: inline-flex;
-}
-
-.left-menu {
-    font-size: 11px;
+@media screen and (max-width: 600px) {
+    .logo {
+        position: unset;
+        left: unset;
+        right: unset;
+        padding-top: 40%;
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
 }

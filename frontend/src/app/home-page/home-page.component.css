@@ -1,3 +1,7 @@
+.title {
+    font-family: 'KoHo', sans-serif;
+}
+
 h1.h1_title {
     font-size: 5em;
     margin-top: 0px;
@@ -17,11 +21,6 @@ h2.h2_title {
     font-weight: bold;
 }
 
-.title {
-    padding-top: 60px;
-    font-family: 'KoHo', sans-serif;
-}
-
 .blue_title_line {
     height: 100%;
     background: linear-gradient(180deg, #fff 50%, #0071b9 50%);
@@ -37,10 +36,19 @@ h2.h2_title {
     background: linear-gradient(180deg, #fff 50%, #ffa615 50%);
 }
 
-.our_story {
-    font-size: 30px;
+.description {
+    font-size: 1.8em;
     margin-top: 65px;
     font-family: 'KoHo', sans-serif;
+    text-align: justify;
+}
+
+.descLeft {
+    margin-left: 10%;
+}
+
+.descRight {
+    margin-right: 10%;
 }
 
 .our_story_bold {
@@ -78,4 +86,47 @@ h2.h2_title {
 
 .orange_button {
     background: #ffa615;
+}
+
+@media screen and (max-width: 1024px) {
+    h1.h1_title {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    h2.h2_title {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.2em;
+        margin: 10%;
+    }
+
+    .green_button, .blue_button, .orange_button {
+        margin: auto;
+    }
+}
+
+/* Phone screen adjustments. */
+@media screen and (max-width: 600px) {
+    h1.h1_title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h2.h2_title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.2em;
+        margin: 10%;
+    }
+
+    .green_button, .blue_button, .orange_button {
+        margin: auto;
+    }
 }
