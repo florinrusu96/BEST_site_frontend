@@ -1,9 +1,7 @@
 .footer {
-    height: 350px;
+    height: 45vh;
     width: 100%;
-    margin-top: 100px;
     background-color: #2e2f2f;
-    position: relative;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -23,7 +21,7 @@
 .footer-text{
     color:white;
     font-family: 'KoHo', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: auto;
     width: 100%;
     text-align: center;
@@ -48,14 +46,14 @@
     padding-left: 24px;
     padding-right: 24px;
     font-family: 'KoHo', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     margin-left: 2%;
 }
 
 @media screen and (max-width: 600px) {
     .footer-text {
-        font-size: 17px;
+        font-size: 1rem;
     }
 
     .footer-button {
