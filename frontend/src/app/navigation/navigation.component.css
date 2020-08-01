@@ -124,6 +124,19 @@ span.navbar_link {
     position: relative;
 }
 
+.banner-international {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    min-height: calc(100% - 100px);
+    background-position: center;
+    background-image:
+        url('src/assets/images/background.png');
+    background-size: cover;
+    background-blend-mode: saturation;
+    position: relative;
+}
+
 .divider-banner-bottom {
     height: 200px;
     width: 100%;

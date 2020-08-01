@@ -8,6 +8,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { StoryPageComponent } from './story-page/story-page.component';
 import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import { EventsPageComponent } from './events-page/events-page.component';
+import { InternationalPageComponent } from './international-page/international-page.component';
 
 const routes: Routes = [
   {path: 'blog-page', component: BlogPageComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'contact-form', component: ContactFormComponent},
   {path: 'story-page', component: StoryPageComponent},
   {path: 'partners-page', component: PartnersPageComponent},
+  {path: 'international-page', component: InternationalPageComponent},
   {path: '', redirectTo: '/home-page', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 ];

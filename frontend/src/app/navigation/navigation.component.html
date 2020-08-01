@@ -3,7 +3,8 @@
             'banner-event': eventpagerla.isActive,
             'banner-story': storypagerla.isActive,
             'banner-partners': partnerspagerla.isActive,
-            'banner-blog': blogpagerla.isActive}">
+            'banner-blog': blogpagerla.isActive,
+            'banner-international': internationalpagerla.isActive}">
 
     <mat-toolbar>
 
@@ -62,9 +63,15 @@
                           <span class="navbar_link" translate>NAVBAR.BLOG</span>
                       </mat-list-item>
 
+                      <mat-list-item routerLink="/international-page" routerLinkActive="routerLinkActive" #internationalpagerla="routerLinkActive">
+                          <span class="navbar_link" translate>NAVBAR.INTERNATIONAL</span>
+                      </mat-list-item>
+
                       <mat-list-item (click)="openCreateForm()">
                           <span class="navbar_link" translate>NAVBAR.CONTACT</span>
                       </mat-list-item>
+
+                      
 
                   </div>
                 </mat-nav-list>
@@ -114,6 +121,15 @@
         </div>
         <div class="events">
             <span translate>NAVBAR.STORY</span>
+        </div>
+    </div>
+
+    <div *ngIf="internationalpagerla.isActive" class="events-text">
+        <div *ngIf="isEnglish()">
+            <span translate>NAVBAR.OUR</span>
+        </div>
+        <div class="events">
+            <span translate>NAVBAR.INTERNATIONAL</span>
         </div>
     </div>
 

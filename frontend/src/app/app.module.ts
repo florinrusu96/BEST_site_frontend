@@ -39,6 +39,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { LayoutComponent } from './layout/layout.component';
 import { SideNavigationComponent } from './side-navigation/side-navigation.component';
+import { InternationalPageComponent } from './international-page/international-page.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -63,6 +64,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PartnersPageComponent,
     LayoutComponent,
     SideNavigationComponent,
+    InternationalPageComponent,
   ],
   imports: [
     FlexLayoutModule,
