@@ -2,45 +2,62 @@
     font-family: 'KoHo', sans-serif;
 }
 
+.homepageContainer {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.homepageElement {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
 h1.h1_title {
     font-size: 5em;
-    margin-top: 0px;
-    z-index: 2;
-    position: relative;
     margin-bottom: 0px;
+    margin-top: 0px;
     font-family: 'KoHo', sans-serif;
 }
 
 h2.h2_title {
     font-size: 3em;
-    margin-bottom: -16px;
     margin-top: -5px;
-    z-index: 3;
+    margin-bottom: 0px;
     font-family: 'KoHo', sans-serif;
-    position: relative;
     font-weight: bold;
 }
 
 .blue_title_line {
     height: 100%;
-    background: linear-gradient(180deg, #fff 50%, #0071b9 50%);
+    background: linear-gradient(180deg, #fafafa 50%, #0071b9 50%);
 }
 
 .green_title_line {
     height: 100%;
-    background: linear-gradient(180deg, #fff 50%, #8ac940 50%);
+    background: linear-gradient(180deg, #fafafa 50%, #8ac940 50%);
 }
 
 .orange_title_line {
     height: 100%;
-    background: linear-gradient(180deg, #fff 50%, #ffa615 50%);
+    background: linear-gradient(180deg, #fafafa 50%, #ffa615 50%);
 }
 
 .description {
     font-size: 1.8em;
-    margin-top: 65px;
+    margin-top: 5vh;
     font-family: 'KoHo', sans-serif;
     text-align: justify;
+}
+
+.h2Left {
+    text-align: right;
+}
+
+.h2Right {
+    text-align: left;
 }
 
 .descLeft {
@@ -56,24 +73,16 @@ h2.h2_title {
     font-family: 'KoHo', sans-serif;
 }
 
-.left-tile {
-    text-align: right;
-}
-
-.homepage_images {
+.homepageImage {
     width: 65%;
 }
 
 .green_button, .blue_button, .orange_button {
     font-family: 'KoHo', sans-serif;
-    margin-top: 35px;
     border-radius: 0px;
     box-shadow: unset;
     font-size: 27px;
     color: #fff;
-    padding: 2px 40px;
-    margin-left: 25%;
-    margin-right: 30%;
 }
 
 .blue_button {
@@ -88,15 +97,14 @@ h2.h2_title {
     background: #ffa615;
 }
 
+/* Phone screen adjustments. */
 @media screen and (max-width: 1024px) {
     h1.h1_title {
         font-size: 3em;
-        text-align: center;
     }
 
     h2.h2_title {
         font-size: 2em;
-        text-align: center;
     }
 
     .description {
@@ -104,29 +112,11 @@ h2.h2_title {
         margin: 10%;
     }
 
-    .green_button, .blue_button, .orange_button {
-        margin: auto;
-    }
-}
-
-/* Phone screen adjustments. */
-@media screen and (max-width: 600px) {
-    h1.h1_title {
-        font-size: 1.5em;
+    .h2Left {
         text-align: center;
     }
-
-    h2.h2_title {
-        font-size: 1.2em;
+    
+    .h2Right {
         text-align: center;
-    }
-
-    .description {
-        font-size: 1.2em;
-        margin: 10%;
-    }
-
-    .green_button, .blue_button, .orange_button {
-        margin: auto;
     }
 }

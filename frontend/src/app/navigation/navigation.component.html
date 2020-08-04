@@ -5,10 +5,10 @@
             'banner-partners': partnerspagerla.isActive,
             'banner-blog': blogpagerla.isActive}">
 
-    <mat-toolbar>
+    <mat-toolbar fxLayout="row" fxLayoutAlign="space-evenly center">
 
         <!-- Icon for menu. Shown only on small screens. -->
-        <div fxHide.gt-xs="fxHide.gt-xs">
+        <div fxShow fxHide.gt-md>
             <button mat-icon-button="mat-icon-button" (click)="onToggleSidenav()">
                 <mat-icon>menu</mat-icon>
             </button>
@@ -36,7 +36,7 @@
         </mat-nav-list>
         
         <!-- Collapsible menu items.. -->
-        <div fxFlex="fxFlex" fxLayout="fxLayout" fxLayoutAlign="end" fxHide.xs="fxHide.xs">
+        <div fxFlex="fxFlex" fxLayout="fxLayout" fxLayoutAlign="end" fxHide fxShow.gt-md>
             <ul fxLayout="fxLayout" fxLayoutGap="15px" class="navigation-items">
                 <mat-nav-list class="navigation">
                   <!-- Site menu items. -->
@@ -73,9 +73,7 @@
 
         <!-- Icon used as button for changing language. -->
         <div class="right-menu">
-            <mat-list-item>
-                <span (click)="changeLanguage()" class="flag-border flag-icon flag-icon-{{flagString}}"></span>
-            </mat-list-item>
+            <span (click)="changeLanguage()" class="flag-border flag-icon flag-icon-{{flagString}}"></span>
         </div>
 
     </mat-toolbar>
