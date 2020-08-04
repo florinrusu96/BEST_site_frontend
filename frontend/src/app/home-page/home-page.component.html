@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="homepageContainer" 
      fxLayout="row wrap"
      fxLayout.lt-md="column">
@@ -64,3 +65,86 @@
   </div>
 
 </div>
+=======
+<!-- TODO: reorder elements on small screen -->
+<mat-grid-list [cols]="breakpoint" rowHeight="1:1.1" (window:resize)="onResize($event)">
+
+    <!-- OUR STORY - image. -->
+    <mat-grid-tile>
+      <img class="homepage_images" src="../../assets/images/img.png">
+    </mat-grid-tile>
+
+    <!-- OUR STORY - description. -->
+    <mat-grid-tile>
+      <div>
+        <div class="title">
+          <h2 class="h2_title"><span translate>HOMEPAGE.OUR</span></h2>
+          <h1 class="h1_title" ><span class="blue_title_line" translate>HOMEPAGE.STORY</span></h1>
+        </div>
+        <div class="description descRight">
+          <p><span translate class="our_story_bold">HOMEPAGE.BEST</span>
+          <span translate>HOMEPAGE.OUR_STORY</span></p>
+        </div>
+        <button class="blue_button" mat-raised-button color='warn' ><span translate>HOMEPAGE.STORY_BUTTON</span></button>
+      </div>
+    </mat-grid-tile>
+
+    <!-- OUR EVENTS - description. -->
+    <mat-grid-tile>
+      <div class="left-tile">
+        <div class="title">
+          <h2 class="h2_title"><span translate>HOMEPAGE.OUR</span></h2>
+          <h1 class="h1_title" ><span class="orange_title_line" translate>HOMEPAGE.EVENTS</span></h1>
+        </div>
+        <div class="description descLeft">
+          <p><span translate>HOMEPAGE.OUR_EVENTS</span></p>
+        </div>
+        <button class="orange_button" mat-raised-button color='warn' ><span translate>HOMEPAGE.EVENTS_BUTTON</span></button>
+      </div>
+    </mat-grid-tile>
+
+    <!-- OUR EVENTS - image. -->
+    <mat-grid-tile>
+      <img class="homepage_images" src="../../assets/images/img.png">
+    </mat-grid-tile>
+
+    <!-- OUR PARTNERS - image. -->
+    <mat-grid-tile>
+      <img class="homepage_images" src="../../assets/images/img.png">
+    </mat-grid-tile>
+
+    <!-- OUR PARTNERS - description. -->
+    <mat-grid-tile>
+      <div>
+        <div class="title">
+          <h2 class="h2_title"><span translate>HOMEPAGE.OUR</span></h2>
+          <h1 class="h1_title" ><span class="green_title_line" translate>HOMEPAGE.PARTNERS</span></h1>
+        </div>
+        <div class="description descRight">
+          <p><span translate>HOMEPAGE.OUR_PARTNERS</span></p>
+        </div>
+        <button class="green_button" mat-raised-button color='warn' ><span translate>HOMEPAGE.PARTNERS_BUTTON</span></button>
+      </div>
+    </mat-grid-tile>
+
+    <!-- ABOUT US - description. -->
+    <mat-grid-tile>
+      <div class="left-tile">
+        <div class="title">
+          <h1 class="h1_title" ><span class="blue_title_line" translate>HOMEPAGE.ABOUT</span></h1>
+          <h2 class="h2_title"><span translate>HOMEPAGE.US</span></h2>
+        </div>
+        <div class="description descLeft">
+          <p><span translate>HOMEPAGE.ABOUT_US</span></p>
+        </div>
+        <button class="blue_button" mat-raised-button color='warn' ><span translate>HOMEPAGE.ABOUT_BUTTON</span></button>
+      </div>
+    </mat-grid-tile>
+
+    <!-- ABOUT US - image. -->
+    <mat-grid-tile>
+      <img class="homepage_images" src="../../assets/images/img.png">
+    </mat-grid-tile>
+
+  </mat-grid-list>
+>>>>>>> master

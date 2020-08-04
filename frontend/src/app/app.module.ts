@@ -35,6 +35,13 @@ import { EventsPageComponent } from './events-page/events-page.component';
 import { EventCardComponent } from './events-page/event-card/event-card.component';
 import { PartnersPageComponent } from './partners-page/partners-page.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+<<<<<<< HEAD
+=======
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { LayoutComponent } from './layout/layout.component';
+import { SideNavigationComponent } from './side-navigation/side-navigation.component';
+>>>>>>> master
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -57,6 +64,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     EventsPageComponent,
     EventCardComponent,
     PartnersPageComponent,
+    LayoutComponent,
+    SideNavigationComponent,
   ],
   imports: [
     FlexLayoutModule,
@@ -83,6 +92,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatGridListModule,
     ReactiveFormsModule,
     MatDialogModule,
+    MatSidenavModule,
+    MatToolbarModule,
   ],
   entryComponents: [
     ContactFormComponent,

@@ -2,6 +2,7 @@
     font-family: 'KoHo', sans-serif;
 }
 
+<<<<<<< HEAD
 .homepageContainer {
     justify-content: space-evenly;
     align-items: center;
@@ -15,6 +16,8 @@
     margin: 5%;
 }
 
+=======
+>>>>>>> master
 h1.h1_title {
     font-size: 5em;
     margin-bottom: 0px;
@@ -45,7 +48,11 @@ h2.h2_title {
 
 .description {
     font-size: 1.8em;
+<<<<<<< HEAD
     margin-top: 5vh;
+=======
+    margin-top: 65px;
+>>>>>>> master
     font-family: 'KoHo', sans-serif;
     text-align: justify;
 }
@@ -87,18 +94,59 @@ h2.h2_title {
     background: #ffa615;
 }
 
+<<<<<<< HEAD
 /* Phone screen adjustments. */
 @media screen and (max-width: 1024px) {
     h1.h1_title {
         font-size: 3em;
+=======
+@media screen and (max-width: 1024px) {
+    h1.h1_title {
+        font-size: 3em;
+        text-align: center;
+>>>>>>> master
     }
 
     h2.h2_title {
         font-size: 2em;
+<<<<<<< HEAD
+=======
+        text-align: center;
+>>>>>>> master
     }
 
     .description {
         font-size: 1.2em;
         margin: 10%;
     }
+<<<<<<< HEAD
 }
+=======
+
+    .green_button, .blue_button, .orange_button {
+        margin: auto;
+    }
+}
+
+/* Phone screen adjustments. */
+@media screen and (max-width: 600px) {
+    h1.h1_title {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h2.h2_title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 1.2em;
+        margin: 10%;
+    }
+
+    .green_button, .blue_button, .orange_button {
+        margin: auto;
+    }
+}
+>>>>>>> master
